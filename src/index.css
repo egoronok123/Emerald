@@ -1,0 +1,368 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+   background: url("./assets/Rectangle 4.png") no-repeat center center;
+
+   background-size: cover;
+
+}
+.background-svg1 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.3;
+   filter: blur(0px);
+}
+
+.background-svg1 svg {
+   width: 100%;
+   height: 100%;
+
+}
+.background-svg2{
+   position: absolute;
+   top: 20px;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.2;
+   filter: blur(0px);
+}
+
+.background-svg2 svg {
+   width: 100%;
+   height: 100%;
+
+}
+.background-svg3{
+   position: absolute;
+   margin-top: 110px;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.1;
+   filter: blur(0px);
+}
+
+.background-svg3 svg {
+   width: 100%;
+   height: 100%;
+
+}
+.background-svg4 {
+   position: absolute;
+   top: 2400px;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.1;
+   filter: blur(0px);
+}
+
+.background-svg4 svg {
+   width: 100%;
+   height: 100%;
+
+}
+
+
+
+
+.background-svg5 {
+   position: absolute;
+  top:2610px;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.15;
+   filter: blur(0px);
+}
+
+/* Растягивание фона на весь экран */
+.background-svg5 svg {
+   width: 100%;
+   height: 100%;
+
+}
+.header-active{
+ background: #062243;;
+
+}
+
+/* Стили для ссылки */
+.nav-link{
+   position: relative;
+   text-decoration: none;
+   transition: color 0.3s ease;
+}
+/* Стили для псевдоэлемента, который будет представлять линию под ссылкой */
+.nav-link::after {
+   content: ''; /* Обязательно указываем content для псевдоэлемента */
+   position: absolute;
+   bottom: 0; /* Устанавливаем отрицательное значение, чтобы псевдоэлемент находился под текстом ссылки */
+   left: 0;
+   width: 0;
+   height: 2px;
+   background-color: #369CFB;
+   transition: width 0.7s ease; /* Плавный переход для изменения ширины псевдоэлемента */
+   transform-origin: left; /* Устанавливаем точку трансформации слева */
+   z-index: -1;
+}
+.nav-link:hover {
+   color: #369CFB;/* Изменяем цвет текста при наведении */
+}
+/* При наведении курсора на ссылку, изменяем ширину псевдоэлемента */
+.nav-link:hover::after {
+   width: 100%;
+}
+.hover-svg {
+   /*--svg-color: white; !* Изначальный цвет *!*/
+   --svg-margin-right: 0.5rem;
+   color: white;
+}
+
+
+
+.hover-svg:hover {
+   /*--svg-color: #369CFB; !* Цвет при наведении *!*/
+  --svg-margin-right: 0;
+   color: #369CFB;
+}
+
+/* Применение цвета SVG через fill */
+.fill-current {
+   /*fill: var(--svg-color);*/
+   margin-right: var(--svg-margin-right);
+}
+
+.text-18 {
+   font-size: 18px;
+}
+
+.text-14 {
+   font-size: 14px;
+}
+
+.bg-transparent {
+   background-color: transparent;
+}
+
+.bg-opacity-30 {
+   border-radius: 20px;
+   background: linear-gradient(150deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.03) 100%);
+   backdrop-filter: blur(20px);
+   border: solid 2px rgba(122, 118, 220, 0.2);
+}
+.bg-opacity-30-2 {
+   border-bottom-left-radius: 2rem;
+   border-bottom-right-radius: 2rem;
+   background: linear-gradient(90deg, rgba(29, 48, 96, 0.9) 0%, rgba(46, 73, 157, 0.9) 100%);
+   opacity: 100%;
+   backdrop-filter: blur(10px);
+   border: solid 1px rgba(122, 118, 220, 0.2);
+}
+
+.circleAdv{
+   box-shadow: 0 4px 29px 0 rgba(92, 210, 222, 0.44);
+}
+.svgBlock{
+   position: relative;
+   font-size: 5px;
+   height: 60px;
+   width: 60px;
+   background: linear-gradient(39deg, #4DDAC0 0%, #2292C2 100%);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.svgBlock:before{
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 0;
+   border-radius: 50%;
+   filter: blur(5px);
+   transform: scale(1.01);
+   background: linear-gradient(39deg, #4DDAC0 0%, #2292C2 100%);
+   box-shadow: 0 4px 29px 0 rgba(92, 210, 222, 0.44);
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+
+}
+.svgImage{
+   position: relative;
+   top: 92%;
+   left: 20%;
+
+}
+.svgImage2{
+   height: 35px;
+   width: 35px;
+}
+
+
+.swiper_container {
+   height: 22rem;
+
+   position: relative;
+}
+
+.swiper-slide {
+   width: 48rem;
+   height: 20rem;
+
+}
+
+
+
+.swiper-slide .imgMain {
+   max-height: 100%;
+   width: 48rem;
+
+   border-top-left-radius: 2rem;
+   border-top-right-radius: 2rem;
+   object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+   display: none;
+}
+
+
+.slider-controler {
+   position: relative;
+   bottom: 2rem;
+   width: 9rem;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-decoration: none;
+}
+
+.slider-controler .swiper-button-next {
+   left: 58% !important;
+   transform: translateX(-58%) !important;
+}
+
+@media (max-width: 990px) {
+   .slider-controler .swiper-button-next {
+      left: 70% !important;
+      transform: translateX(-70%) !important;
+   }
+}
+
+@media (max-width: 450px) {
+   .slider-controler .swiper-button-next {
+      left: 80% !important;
+      transform: translateX(-80%) !important;
+   }
+}
+
+@media (max-width: 990px) {
+   .slider-controler .swiper-button-prev {
+      left: 30% !important;
+      transform: translateX(-30%) !important;
+   }
+}
+
+@media (max-width: 450px) {
+   .slider-controler .swiper-button-prev {
+      left: 20% !important;
+      transform: translateX(-20%) !important;
+   }
+}
+
+.slider-controler .slider-arrow {
+   z-index: 20;
+   width: 1rem;
+   height: 1rem;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.slider-controler .slider-arrow svg {
+   font-size: 2rem;
+   color: white;
+   cursor: pointer;
+}
+
+.slider-controler .slider-arrow::after {
+   content: '';
+}
+
+.swiper-pagination {
+   position: relative;
+   width: 9rem !important;
+   margin-bottom: -0.85rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+
+   background: rgba(101, 126, 255, 1);
+
+   opacity: 80%;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+   background: white;
+}
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      transform: translateY(-30px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.animate-fadeIn {
+   animation: fadeIn 0.5s ease ;
+}
+.footer{
+
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background: #171327;
+
+}
+.line-container{
+   position: absolute;
+   top: 240px;
+   margin-left: -4rem;
+   overflow: hidden;
+   text-align: center;
+
+}
+.line1{
+   height: 3690px;
+   vertical-align: middle;
+
+}
+.text-gray-1{
+   color:#EBEFF4;
+}
+.text-green-1{
+   color: #28F198;
+}
+.regContent{
+
+      min-height: calc(100vh - 384px);
+
+}
