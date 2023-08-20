@@ -8,7 +8,7 @@ const Layout: FC = () => {
     return (
         <div className=' font-inter text-white  '>
             <Header/>
-            <div className=" max-w-6xl mx-auto   mt-20 ">
+            <div className=" max-w-[73rem] mx-auto   mt-20 ">
                 <Outlet/>
             </div>
             <div className="z-20 ">

@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+   margin: 0;
+   padding: 0;
 
+}
 body{
    background: url("./assets/Rectangle 4.png") no-repeat center center;
-
    background-size: cover;
-
+   cursor: auto;
 }
 .background-svg1 {
    position: absolute;
@@ -126,7 +129,6 @@ body{
    width: 100%;
 }
 .hover-svg {
-   /*--svg-color: white; !* Изначальный цвет *!*/
    --svg-margin-right: 0.5rem;
    color: white;
 }
@@ -144,13 +146,19 @@ body{
    /*fill: var(--svg-color);*/
    margin-right: var(--svg-margin-right);
 }
-
-.text-18 {
-   font-size: 18px;
+.button-link svg{
+   transition: margin 0.4s ease-in-out;
 }
-
-.text-14 {
-   font-size: 14px;
+.button-link:hover svg{
+   margin-left: 1.2rem;
+}
+.button-hover{
+   background: #369CFB;
+   transition: background-color 0.4s, box-shadow 0.3s;
+}
+.button-hover:hover{
+   box-shadow: 0 4px 29px 0 rgba(92, 210, 222, 0.44);
+   border-radius: 6px;
 }
 
 .bg-transparent {
@@ -224,8 +232,6 @@ body{
    height: 20rem;
 
 }
-
-
 
 .swiper-slide .imgMain {
    max-height: 100%;
@@ -348,11 +354,26 @@ body{
    margin-left: -4rem;
    overflow: hidden;
    text-align: center;
+}
+.line-container2{
+   position: absolute;
+   top: 13rem;
+   margin-left: -1rem;
+   overflow: hidden;
+   text-align: center;
+
+}
+.line-container3{
+   position: absolute;
+   top: 30rem;
+   margin-left: 60rem;
+   overflow: hidden;
+   text-align: center;
 
 }
 .line1{
    height: 3690px;
-   vertical-align: middle;
+
 
 }
 .text-gray-1{
@@ -361,8 +382,29 @@ body{
 .text-green-1{
    color: #28F198;
 }
+.textError{
+   color: rgba(243, 74, 74, 1);
+}
+
 .regContent{
 
       min-height: calc(100vh - 384px);
 
+}
+
+   .focus1 {
+      border: 2px solid white; /* начальная граница для поля ввода */
+      transition: border-color 0.1s; /* добавляем анимацию при изменении границы */
+   }
+
+   /* Определяем стили для фокуса на элементе input */
+   .focus1:focus {
+      border: 2px solid #369CFB;
+
+      outline: none; /* убираем стандартный контур фокуса (если нужно) */
+
+   }
+.input-error {
+
+   border: 2px solid rgba(243, 74, 74, 1)
 }
