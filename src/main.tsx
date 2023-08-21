@@ -8,18 +8,21 @@ import Rus from "./pages/Rus.tsx";
 import Registration from "./pages/Registration.tsx";
 
 
+
 const router = createBrowserRouter([
     {
+
         path: "/",
         element: <Layout/>,
         errorElement: <ErrorPage/>,
         children:[
             {
-                path: '/',
+
+                path: '/ru',
                 element: <Rus/>,
             },
             {
-                path: '/registration',
+                path: '/ru/registration',
                 element: <Registration/>,
             },
         ],

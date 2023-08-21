@@ -7,8 +7,14 @@
    padding: 0;
 
 }
+
 body{
-   background: url("./assets/Rectangle 4.png") no-repeat center center;
+   /*background: linear-gradient(109.75deg, #0A1328 -14.58%, #4771DB 111.67%, #0D1426 111.68%);*/
+
+   /*background: url("./assets/Rectangle 4.png") no-repeat center center;*/
+  background: linear-gradient(109.75deg, #192952 -14.58%, #4771DB 111.67%, #0D1426 111.68%), url("./assets/Rectangle 4.png") no-repeat center center;
+
+   background-blend-mode: overlay, normal;
    background-size: cover;
    cursor: auto;
 }
@@ -119,7 +125,7 @@ body{
    background-color: #369CFB;
    transition: width 0.7s ease; /* Плавный переход для изменения ширины псевдоэлемента */
    transform-origin: left; /* Устанавливаем точку трансформации слева */
-   z-index: -1;
+   z-index: 1;
 }
 .nav-link:hover {
    color: #369CFB;/* Изменяем цвет текста при наведении */
@@ -128,9 +134,38 @@ body{
 .nav-link:hover::after {
    width: 100%;
 }
+
+.nav-link2{
+   position: relative;
+   text-decoration: none;
+   transition: color 0.3s ease;
+}
+/* Стили для псевдоэлемента, который будет представлять линию под ссылкой */
+.nav-link2::after {
+   content: ''; /* Обязательно указываем content для псевдоэлемента */
+   position: absolute;
+   bottom: 0; /* Устанавливаем отрицательное значение, чтобы псевдоэлемент находился под текстом ссылки */
+   left: 27px;
+   width: 0;
+   height: 2px;
+   background-color: #369CFB;
+   transition: width 0.7s ease; /* Плавный переход для изменения ширины псевдоэлемента */
+   transform-origin: left; /* Устанавливаем точку трансформации слева */
+   z-index: 1;
+}
+.nav-lin2k:hover {
+   color: #369CFB;/* Изменяем цвет текста при наведении */
+}
+/* При наведении курсора на ссылку, изменяем ширину псевдоэлемента */
+.nav-link2:hover::after {
+   width: 80%;
+}
+
+
 .hover-svg {
    --svg-margin-right: 0.5rem;
    color: white;
+   transition: margin 0.4s ease-in-out;
 }
 
 
@@ -139,6 +174,7 @@ body{
    /*--svg-color: #369CFB; !* Цвет при наведении *!*/
   --svg-margin-right: 0;
    color: #369CFB;
+
 }
 
 /* Применение цвета SVG через fill */
@@ -160,7 +196,15 @@ body{
    box-shadow: 0 4px 29px 0 rgba(92, 210, 222, 0.44);
    border-radius: 6px;
 }
+.button-hover2{
 
+   transition: background-color 0.4s, box-shadow 0.3s;
+}
+.button-hover2:hover{
+
+ border-color: #369CFB;
+   background: #369CFB;
+}
 .bg-transparent {
    background-color: transparent;
 }
@@ -407,4 +451,16 @@ body{
 .input-error {
 
    border: 2px solid rgba(243, 74, 74, 1)
+}
+.borderB {
+   position: relative;
+}
+.borderB::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   border-bottom: solid 1px #B7B6CC;
+   opacity: 0.2; /* Установите желаемое значение прозрачности */
 }

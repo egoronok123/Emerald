@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link as LinkRout } from "react-router-dom";
+import { Link  } from "react-router-dom";
 import aboutImg from "../assets/aboutImg.png";
 import arrowTrend from "../assets/svg/Arrow-trend-up.svg";
 import chartMixed from "../assets/svg/Chart_Mixed.svg";
@@ -15,18 +15,18 @@ import photo3 from "../assets/svg/photo3.svg";
 import Slider from "../components/Slider.tsx";
 import FaqItem from "../components/FaqItem.tsx";
 import telegram2 from "../assets/svg/Telegram2.svg";
-import emerald1 from "../assets/emerald1.png";
-import emerald2 from "../assets/emerald2.png";
+
 import emerald3 from "../assets/emerald3.png";
 import emerald4 from "../assets/emerald4.png";
-import coin1 from "../assets/Coin1.png";
-import coin2 from "../assets/Coin2.png";
-import coin3 from "../assets/Coin3.png";
+
 import coin4 from "../assets/Coin4.png";
 import coin5 from "../assets/Coin5.png";
 import coin6 from "../assets/Coin6.png";
 import coin7 from "../assets/Coin7.png";
 import coin9 from "../assets/Coin9.png";
+import WelcomeSect from "../components/WelcomeSect.tsx";
+
+
 
 const Rus = () => {
   const [activeQuestionIndex, setActiveQuestionIndex] = useState<number | null>(
@@ -73,90 +73,7 @@ const Rus = () => {
   ];
   return (
     <div>
-      <section className="firstSection flex ">
-        <div className={"w-8/12 mt-28 "}>
-          <h2 className="text-5xl font-bold mb-4 leading-[1.2] tracking-wide ">
-            Добро пожаловать в партнерскую программу
-            <span className={"text-green-1"}> Emerald Partners </span>
-          </h2>
-          <h3 className="font-normal text-base text-gray-300 mb-2 tracking-wide">
-            Окунитесь в царство изумрудных богатств уже сегодня!
-          </h3>
-          <button
-            className={
-              " text-white font-bold   rounded-md cursor-pointer mt-11 tracking-wide  button-hover button-link w-52"
-            }
-          >
-            <LinkRout
-              to={"registration"}
-              className={"flex justify-start py-4 px-1 ml-1"}
-            >
-              <p className={"ml-8"}>Регистрация</p>
-              <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={"ml-2.5"}
-              >
-                <path
-                    d="M8.5 5L15.5 12L8.5 19"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-              </svg>
-            </LinkRout>
-          </button>
-        </div>
-        <div className="w-5/12">
-          <img
-            src={emerald1}
-            alt="img"
-            className={"absolute ml-[2rem] mt-[3rem] z-10"}
-          />
-          <img
-            src={emerald2}
-            alt="img"
-            className={"absolute ml-[-rem] mt-[19rem]"}
-          />
-          <img
-            src={coin1}
-            alt="img"
-            className={"absolute ml-[22rem] mt-[11rem]"}
-          />
-          <img
-            src={coin2}
-            alt="img"
-            className={"absolute ml-[17rem] mt-[15.5rem] z-10"}
-          />
-          <img
-            src={coin3}
-            alt="img"
-            className={"absolute ml-[-5rem] mt-[29rem] z-10"}
-          />
-          <div className={"line-container"}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="621"
-              height="3830"
-              viewBox="0 0 621 3830"
-              className={"line1"}
-            >
-              <path
-                d="M284.499 1.5C196.999 5.66667 21.9993 24.1 21.9993 64.5C21.9993 115 510.499 149.5 511.999 225.5C513.499 301.5 -8.00067 297 1.49933 410.5C10.9993 524 575.397 570.5 535 670.5C504.5 746 373.248 807.177 476.5 908C561.5 991 696 1121.5 524.5 1422C312.134 1794.1 603 1850.5 596 2032C589 2213.5 316 2087.15 397.5 2010C492 1920.55 609.5 2206 570 2300.5C530.5 2395 391 2588 523 2764C655 2940 509 2912 375.5 3059C271.039 3174.02 347 3195 388 3280C419.357 3345.01 310.123 3382.33 330 3516.5C346 3624.5 529.5 3628.5 599.5 3695C669.5 3761.5 537 3828.5 537 3828.5"
-                stroke="#3F72BD"
-                strokeWidth={"2"}
-                strokeDasharray={"12 12"}
-                id="line1"
-                fill="none"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
+      <WelcomeSect/>
       <section className="secondSection flex mt-24 ">
         <div className="flex flex-col items-start bg-opacity-30 p-8 w-1/2">
           <h3 className="text-lg font-semibold text-gray-1">О нас</h3>
@@ -287,7 +204,7 @@ const Rus = () => {
           <Slider></Slider>
         </div>
       </section>
-      <section>
+      <section id='faq'>
         <h2 className="text-4xl font-bold mt-40 text-center">FAQ</h2>
         <img
           src={coin5}
@@ -327,7 +244,7 @@ const Rus = () => {
           ))}
         </div>
       </section>
-      <section>
+      <section id={'contacts'}>
         <h2 className="text-4xl font-bold mt-40 text-center ">
           По вопросам <span className={"text-green-1"}> сотрудничества </span>
         </h2>
@@ -411,15 +328,15 @@ const Rus = () => {
             <span className={"text-emerald-300 "}> сегодня </span>
           </h2>
           <button
-            className={
-              "bg-blue-500 hover:bg-blue-600 text-white font-bold  px-8 rounded-md cursor-pointer mt-10  w-52 mx-auto"
-            }
+              className={
+                " text-white font-bold mx-auto    rounded-md cursor-pointer mt-11 tracking-wide  button-hover button-link w-52"
+              }
           >
-            <LinkRout
-              to={"registration"}
-              className={"flex justify-center py-4"}
+            <Link
+                to={"registration"}
+                className={"flex justify-start py-4 px-1 ml-1"}
             >
-              <p>Регистрация</p>
+              <p className={"ml-8"}>Регистрация</p>
               <svg
                   width="24"
                   height="24"
@@ -436,7 +353,7 @@ const Rus = () => {
                     strokeLinejoin="round"
                 />
               </svg>
-            </LinkRout>
+            </Link>
           </button>
         </div>
       </section>

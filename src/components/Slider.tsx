@@ -15,32 +15,34 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import {Link as LinkRout} from "react-router-dom";
 import telegram from "../assets/svg/Telegram.svg";
 
+
+
 export default function App() {
+
     return (
-
-            <Swiper
-                effect={'coverflow'}
-                centeredSlides={true}
-                loop={true}
-                slidesPerView={2}
-                coverflowEffect={{
-                    rotate: 0,
-                    stretch: 9.5,
-                    depth: 100,
-                    modifier: 5,
-                }}
-                pagination={{ el: '.swiper-pagination', clickable: true }}
-                navigation={{
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-
-                }}
-                modules={[EffectCoverflow, Pagination, Navigation]}
-                className="swiper_container "
-            >
+        <Swiper
+            effect={'coverflow'}
+            centeredSlides={true}
+            loop={true}
+            slidesPerView={2}
+            coverflowEffect={{
+                rotate: 0,
+                stretch: 9.5,
+                depth: 100,
+                modifier: 5,
+            }}
+            pagination={{ el: '.swiper-pagination', clickable: true }}
+            navigation={{
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }}
+            modules={[EffectCoverflow, Pagination, Navigation]}
+            className="swiper_container"
+        >
 
 
-                <SwiperSlide >
+                <SwiperSlide
+                >
                     <div>
                         <img
                             src={map}
@@ -50,7 +52,7 @@ export default function App() {
                             <h2>Кейс на Латинскую Америку</h2>
                             <button
                                 className={
-                                    "bg-blue-500 hover:bg-blue-600 text-white   px-8 rounded-md cursor-pointer mt-5 "
+                                    "text-white font-bold mx-auto    rounded-md cursor-pointer mt-4 tracking-wide  button-hover button-link w-52"
                                 }
                             >
                                 <LinkRout

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link as Link } from "react-router-dom";
-//import { Link as LinkScroll } from 'react-scroll';
+import { Link } from "react-router-dom";
+
 import logoImg from "../assets/emerald_logo.svg";
 import logoImg2 from "../assets/svg/EmeraldParners.svg";
 import regImg from "../assets/Profile.svg";
@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <header
       id="home"
-      className={` fixed top-0 left-0 right-0 z-30  ${
+      className={` fixed top-0 left-0 right-0 z-30   ${
         isScrolled ? "header-active" : ""
       }`}
     >
@@ -36,31 +36,29 @@ const Header = () => {
         }
       >
         <div className="py-4 w-1/4  items-center flex justify-start">
-          <Link to="/" className={"flex  cursor-pointer"}>
+          <Link to="/ru/#start" className={"flex  cursor-pointer"}>
             <img src={logoImg} alt="img" className={""} />
             <img src={logoImg2} alt="img" className={" ml-2"} />
           </Link>
         </div>
 
           <ul className="py-4  text-white flex  justify-center gap-11 ml-20 items-center w-2/4 ">
-            <Link to="/#advantages">
+            <Link to="/ru/#advantages">
               <li className={"my-2 cursor-pointer nav-link font-normal"}>
-
                 Преимущества
               </li>
             </Link>
 
-            <Link to="/#cases">
+            <Link to="/ru/#cases">
               <li className={"my-2 cursor-pointer nav-link font-normal"}> Кейсы</li>
             </Link>
 
-            <Link to="faq">
-              <li className={"my-2 cursor-pointer nav-link font-normal"}> FAQ</li>
+            <Link to="/ru/#faq">
+              <li className={"my-2 cursor-pointer nav-link font-normal"}>FAQ</li>
             </Link>
-            <Link to="contacts">
+            <Link to="/ru/#contacts">
               <li className={" my-2 cursor-pointer nav-link  font-normal"}>
-                {" "}
-                Контакты{" "}
+                Контакты
               </li>
             </Link>
           </ul>
@@ -95,10 +93,10 @@ const Header = () => {
               </li>
             </Link>
 
-            <Link to={"registration"} className={"ml-8"}>
+            <Link to={"/ru/registration"} className={"ml-8"}>
               <li
                   className={
-                    "  py-1.5 px-8 border-2 border-solid border-blue-500 hover:bg-blue-500 font-semibold rounded-md cursor-pointer flex justify-center items-center "
+                    "  py-1.5 px-8 border-2 border-solid border-blue-500 button-hover2 font-semibold rounded-md cursor-pointer flex justify-center items-center "
                   }
               >
                 <img src={regImg} alt="img" className={"w-18 mr-2.5 py-1"} />

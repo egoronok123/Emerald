@@ -1,52 +1,55 @@
-// import  {Link as LinkRout} from "react-router-dom";
-// import {Link as LinkScroll} from 'react-scroll';
-
-import {Link as LinkRout} from "react-router-dom";
+import {Link as LinkRout, Link} from "react-router-dom";
 import logoImg from "../assets/emerald_logo.svg";
 
 import telegram2 from "../assets/svg/Telegram2.svg";
+import logoImg2 from "../assets/svg/EmeraldParners.svg";
+
 
 const Footer = () => {
     return (
         <footer className={'mt-36 h-40 footer  bottom-0 left-0'}>
 
-            <div className={'flex justify-between max-w-7xl items-center mx-auto'}>
-                <div className={'flex justify-between'}>
-                    <LinkRout to="/"   className={'flex justify-between gap-5'}>
-                        <img src={logoImg} alt='img' className={'w-26'}/>
-                        <h1 className=' '>Emerald Partners</h1>
-                    </LinkRout>
+            <div className={'flex justify-between max-w-[73rem] items-center mx-auto borderB'}>
+                <div className="items-center flex justify-start">
+                    <Link to="/ru/#start" className={"flex  cursor-pointer"}>
+                        <img src={logoImg} alt="img" className={""} />
+                        <img src={logoImg2} alt="img" className={" ml-2"} />
+                    </Link>
                 </div>
                 <div>
-                    <ul className='py-4 px-4 text-white flex justify-center gap-10'>
+                    <ul className="py-4  text-white flex  justify-center gap-11 mr-10 items-center  ">
+                        <Link to="/ru/#advantages">
+                            <li className={"my-2 cursor-pointer nav-link font-normal"}>
 
-                        <LinkRout  to="/#advantages"  >
-                            <li className={'my-2 cursor-pointer nav-link'}> Преимущества   </li>
-                        </LinkRout>
+                                Преимущества
+                            </li>
+                        </Link>
 
+                        <Link to="/ru/#cases">
+                            <li className={"my-2 cursor-pointer nav-link font-normal"}> Кейсы</li>
+                        </Link>
 
-                        <LinkRout  to="cases"  >
-                            <li className={'my-2 cursor-pointer nav-link'}>   Кейсы    </li>
-                        </LinkRout>
-
-
-                        <LinkRout to="faq"  >
-                            <li className={'my-2 cursor-pointer nav-link'}>  FAQ    </li>
-                        </LinkRout>
-                        <LinkRout  to="contacts"  >
-                            <li className={'mr-12 my-2 cursor-pointer nav-link'}>   Контакты   </li>
-                        </LinkRout>
+                        <Link to="/ru/#faq">
+                            <li className={"my-2 cursor-pointer nav-link font-normal"}> FAQ</li>
+                        </Link>
+                        <Link to="/ru/#contacts">
+                            <li className={" my-2 cursor-pointer nav-link  font-normal"}>
+                                Контакты
+                            </li>
+                        </Link>
                     </ul>
                 </div>
-                <a
-                    href={"https://t.me/mettamorg"}
+                <LinkRout
+                    to={"https://t.me/mettamorg" }
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={"flex justify-center"}
+                    className={"flex justify-center nav-link2   "}
                 >
                     <img src={telegram2} alt="img" className={" mr-2.5 "} />
                     <p>Чат Телеграм</p>
-                </a>
+
+                </LinkRout>
+
             </div>
         </footer>
     )
