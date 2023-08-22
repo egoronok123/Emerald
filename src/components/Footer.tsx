@@ -7,9 +7,9 @@ import logoImg2 from "../assets/svg/EmeraldParners.svg";
 
 const Footer = () => {
     return (
-        <footer className={'mt-36 h-40 footer  bottom-0 left-0'}>
+        <footer className={'mt-36 h-full sm:px-2 footer bottom-0 left-0'}>
 
-            <div className={'flex justify-between max-w-[73rem] items-center mx-auto borderB'}>
+            <div className={'flex justify-between lg:max-w-[73rem]  py-4 items-center mx-auto borderB'}>
                 <div className="items-center flex justify-start">
                     <Link to="/ru/#start" className={"flex  cursor-pointer"}>
                         <img src={logoImg} alt="img" className={""} />
@@ -17,7 +17,7 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div>
-                    <ul className="py-4  text-white flex  justify-center gap-11 mr-10 items-center  ">
+                    <ul className=" sm:hidden lg:visible  text-white flex  justify-center gap-11 mr-10 items-center  ">
                         <Link to="/ru/#advantages">
                             <li className={"my-2 cursor-pointer nav-link font-normal"}>
 
@@ -49,6 +49,15 @@ const Footer = () => {
                     <p>Чат Телеграм</p>
 
                 </LinkRout>
+
+            </div>
+            <div className={'flex flex-col '}>
+                <div className={'mx-auto mt-4'}>
+                    <p>Публичная оферта</p>
+                </div>
+                <div className={'mx-auto mt-4 mb-4'}>
+                    <p className={'text-gray-500'}>EmeraldPartners © 2023</p>
+                </div>
 
             </div>
         </footer>

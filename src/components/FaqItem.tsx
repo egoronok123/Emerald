@@ -16,12 +16,12 @@ const FaqItem: React.FC<FaqItemProps> = ({
                                              onClick,
                                          }) => {
     const arrowIcon = isOpen ? (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 ">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
         </svg>
 
     ) : (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 ">
             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
         </svg>
 
@@ -29,15 +29,20 @@ const FaqItem: React.FC<FaqItemProps> = ({
     );
 
     return (
-        <div className="mx-auto w-[48rem]  buttonForm">
+        <div className="mx-auto w-full ">
             <button
-                className={`font-bold my-3 mx-auto px-6 py-6 bg-opacity-30  buttonForm`}
+                className={` font-bold my-3 mx-auto sm:p-3 lg:p-8 bg-opacity-30 buttonForm `}
                 onClick={onClick}
             >
-                <div className={`w-[48rem]`}>
-                    <div className="flex justify-between items-center">
-                        {question}
-                        {arrowIcon}
+                <div className={`w-full`}>
+                    <div className="flex justify-between items-center ">
+                        <div className="pr-6 lg:text-lg sm:text-base ">
+                            {question}
+                        </div>
+
+                        <div className="">
+                            {arrowIcon}
+                        </div>
                     </div>
 
                         {isOpen &&<p
