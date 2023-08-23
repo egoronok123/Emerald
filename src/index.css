@@ -50,17 +50,21 @@
       box-shadow: 0 9px 25px 0 rgba(6, 47, 105, 0.60);
       width: 100%;
    }
-
+   .burgerActive{
+      border-radius: 8px 0 0 8px;
+      background: #062243;
+      z-index: 40;
+   }
+.bgHeader{
+   z-index: 30;
+}
    .svgBlock{
       position: absolute;
-      font-size: 5px;
       height: 60px;
       width: 60px;
       background: linear-gradient(39deg, #4DDAC0 0%, #2292C2 100%);
       border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
    }
    .svgBlock:before{
       position: absolute;
@@ -68,24 +72,53 @@
       top: 0;
       left: 0;
       border-radius: 50%;
-      filter: blur(5px);
-      transform: scale(1.01);
-      background: linear-gradient(39deg, #4DDAC0 0%, #2292C2 100%);
-      box-shadow: 0 4px 29px 0 rgba(92, 210, 222, 0.44);
+      filter: blur(7px);
+      transform: scale(1.04);
+      box-shadow: 0 0 10px 2px rgba(92, 210, 222, 0.44);
       z-index: -1;
       width: 100%;
       height: 100%;
-
    }
    .svgImage{
-      position: relative;
-      top: 92%;
-      left: 20%;
+      position: absolute;
+      left:14px;
+      top:14px;
 
    }
    .svgImage2{
-      height: 35px;
-      width: 35px;
+      height: 31px;
+      width: 31px;
+   }
+   .svgBlock2{
+      position: absolute;;
+      height: 30px;
+      width: 30px;
+      background: linear-gradient(39deg, #4DDAC0 0%, #2292C2 100%);
+      border-radius: 50%;
+
+   }
+   .svgBlock2:before{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      filter: blur(7px);
+      transform: scale(1.04);
+      box-shadow: 0 0 10px 2px rgba(92, 210, 222, 0.44);
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+   }
+   .svgImage3{
+      position: absolute;
+      left:5px;
+      top:5px;
+
+   }
+   .svgImage4{
+      height: 20px;
+      width: 20px;
    }
 
 }
@@ -109,7 +142,9 @@ body{
    opacity: 0.3;
    filter: blur(0px);
 }
-
+.contactHref:hover>div>div{
+   color: #369CFB;
+}
 .background-svg1 svg {
    width: 100%;
    height: 100%;
@@ -422,9 +457,9 @@ body{
    text-align: center;
 }
 .line-container-mobile{
+   width: 100%;
    position: absolute;
-   top: 8rem;
-   margin-left: 2rem;
+   top: 6rem;
    overflow: hidden;
    text-align: center;
 }

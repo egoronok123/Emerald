@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import axios from "axios";
 import regCoin1 from "../assets/regCoin1.png";
 import regCoin2 from "../assets/regCoin2.png";
 import regCoin3 from "../assets/regCoin3.png";
 import regEmerald1 from "../assets/regEmerald1.png";
 import regEmerald2 from "../assets/regEmerald2.png";
+import shieldDone from "../assets/svg/ShieldDone.svg";
+
 
 const RegistrationForm: React.FC = () => {
   const [name, setName] = useState("");
@@ -242,68 +244,71 @@ const RegistrationForm: React.FC = () => {
     );
   };
   return (
-    <section className={""}>
-      <img
-        src={regCoin1}
-        alt="img"
-        className={"absolute ml-[57rem] mt-[50rem] z-10"}
-      />
-      <img
-        src={regCoin2}
-        alt="img"
-        className={"absolute ml-[3rem] mt-[54rem] z-10"}
-      />{" "}
-      <img
-        src={regCoin3}
-        alt="img"
-        className={"absolute ml-[-6rem] mt-[21rem] z-10"}
-      />
-      <img
-        src={regEmerald1}
-        alt="img"
-        className={"absolute ml-[-1rem] mt-[-2rem] z-10"}
-      />
-      <img
-        src={regEmerald2}
-        alt="img"
-        className={"absolute ml-[60rem] mt-[15rem] z-10"}
-      />
-      <div className={"line-container2"}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="135"
-          height="872"
-          viewBox="0 0 135 872"
-          fill="none"
-        >
-          <path
-            d="M108.499 1C64.1653 36.3333 -34.8713 138.274 54.0025 246C120.003 326 91.0001 426.5 40.9998 494C-9.00045 561.5 -41.0004 759 134 871"
-            stroke="#264777"
-            strokeWidth="2"
-            strokeDasharray="12 12"
-          />
-        </svg>
+    <section className={"px-2"}>
+      <div className={'sm:hidden'}>
+        <img
+            src={regCoin1}
+            alt="img"
+            className={"absolute ml-[57rem] mt-[50rem] z-10"}
+        />
+        <img
+            src={regCoin2}
+            alt="img"
+            className={"absolute ml-[3rem] mt-[54rem] z-10"}
+        />{" "}
+        <img
+            src={regCoin3}
+            alt="img"
+            className={"absolute ml-[-6rem] mt-[21rem] z-10"}
+        />
+        <img
+            src={regEmerald1}
+            alt="img"
+            className={"absolute ml-[-1rem] mt-[-2rem] z-10"}
+        />
+        <img
+            src={regEmerald2}
+            alt="img"
+            className={"absolute ml-[60rem] mt-[15rem] z-10"}
+        />
+        <div className={"line-container2"}>
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="135"
+              height="872"
+              viewBox="0 0 135 872"
+              fill="none"
+          >
+            <path
+                d="M108.499 1C64.1653 36.3333 -34.8713 138.274 54.0025 246C120.003 326 91.0001 426.5 40.9998 494C-9.00045 561.5 -41.0004 759 134 871"
+                stroke="#264777"
+                strokeWidth="2"
+                strokeDasharray="12 12"
+            />
+          </svg>
+        </div>
+        <div className={"line-container3"}>
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="211"
+              height="611"
+              viewBox="0 0 211 611"
+              fill="none"
+          >
+            <path
+                d="M106.5 1.5C157.833 60.6667 256 279.032 183.499 318.5C98.9992 364.5 16.5 287.473 61.5 237C106.5 186.527 281.5 375.5 1 609.5"
+                stroke="#3F72BD"
+                strokeWidth="2"
+                strokeDasharray="12 12"
+            />
+          </svg>
+        </div>
       </div>
-      <div className={"line-container3"}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="211"
-          height="611"
-          viewBox="0 0 211 611"
-          fill="none"
-        >
-          <path
-            d="M106.5 1.5C157.833 60.6667 256 279.032 183.499 318.5C98.9992 364.5 16.5 287.473 61.5 237C106.5 186.527 281.5 375.5 1 609.5"
-            stroke="#3F72BD"
-            strokeWidth="2"
-            strokeDasharray="12 12"
-          />
-        </svg>
-      </div>
+
       <div className=" p-4  relative bg-opacity-30 max-w-4xl mx-auto z-20">
         <div className={"max-w-md mx-auto"}>
-          <h2 className="text-4xl font-semibold text-center mt-10">
-            Зарегистрироваться
+          <h2 className="lg:text-4xl sm:text-2xl font-semibold text-center mt-10">
+            Регистрация
           </h2>
           <form onSubmit={handleSubmit}>
             <div className="relative">
@@ -361,7 +366,7 @@ const RegistrationForm: React.FC = () => {
               </svg>
 
               {errorMessages.name && (
-                <p className="textError absolute">{errorMessages.name}</p>
+                <p className="textError absolute text-sm">{errorMessages.name}</p>
               )}
             </div>
             <div className="mt-8 relative">
@@ -415,7 +420,7 @@ const RegistrationForm: React.FC = () => {
               </svg>
 
               {errorMessages.email && (
-                <p className="textError absolute">{errorMessages.email}</p>
+                <p className="textError absolute text-sm">{errorMessages.email}</p>
               )}
             </div>
             <div className="mt-8 relative">
@@ -477,10 +482,19 @@ const RegistrationForm: React.FC = () => {
               </svg>
 
               {errorMessages.password && (
-                <p className="textError absolute">{errorMessages.password}</p>
+                <p className="textError absolute text-sm">{errorMessages.password}</p>
               )}
             </div>
-            <div className="mt-8 relative">
+            <div>
+              <div className="svgBlock2  mt-[0.45rem]  ">
+                <svg className="svgImage3">
+                  <image href={shieldDone} className="svgImage4"/>
+                </svg>
+              </div>
+              <p className={'ml-11 mt-6 text-xs text-justify pr-2'}>Пароль должен содержать от 8 символов, состоящих из
+                латинских заглавных и маленьких букв, минимум одной цифры и специального символа: @$!%*?&#</p>
+            </div>
+            <div className="mt-4 relative">
               <input
                 type="password"
                 placeholder="Повторите пароль"
@@ -538,7 +552,7 @@ const RegistrationForm: React.FC = () => {
                 </g>
               </svg>
               {errorMessages.confirmPassword && (
-                <p className="textError absolute">
+                <p className="textError absolute text-sm">
                   {errorMessages.confirmPassword}
                 </p>
               )}
@@ -576,7 +590,7 @@ const RegistrationForm: React.FC = () => {
               </svg>
 
               {errorMessages.telegramNickname && (
-                <p className="textError absolute">
+                <p className="textError absolute text-sm">
                   {errorMessages.telegramNickname}
                 </p>
               )}
@@ -609,7 +623,7 @@ const RegistrationForm: React.FC = () => {
                 {/* ... Добавьте ещё пункты */}
               </select>
               {errorMessages.trafficSource && (
-                <p className="textError absolute">
+                <p className="textError absolute text-sm">
                   {errorMessages.trafficSource}
                 </p>
               )}
@@ -637,35 +651,82 @@ const RegistrationForm: React.FC = () => {
                 placeholder="Опишите ваш опыт работы здесь..."
               />
               {errorMessages.experience && (
-                <p className="textError absolute">{errorMessages.experience}</p>
+                <p className="textError absolute text-sm">{errorMessages.experience}</p>
               )}
             </div>
             <div className="mt-8">
-              <label className="flex items-center">
+              <label className="flex items-center text-xs cursor-pointer lg:w-[22rem]">
                 <input
                   type="checkbox"
-                  className="mr-2"
+                  className="hidden"
                   checked={agreed}
                   onChange={() => {
                     setAgreed(!agreed);
                     validateField("agreed", !agreed);
                   }}
                 />
+                <div className="checkbox-icon">
+                  {agreed ? (
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className={'cursor-pointer mr-2'}>
+                        <g id="Tick Square">
+                          <path id="Stroke 1" fillRule="evenodd" clipRule="evenodd"
+                                d="M14.334 0.75H5.665C2.644 0.75 0.75 2.889 0.75 5.916V14.084C0.75 17.111 2.635 19.25 5.665 19.25H14.333C17.364 19.25 19.25 17.111 19.25 14.084V5.916C19.25 2.889 17.364 0.75 14.334 0.75Z"
+                                fill="#369CFB" stroke="#130F26" strokeWidth="1.5" strokeLinecap="round"
+                                strokeLinejoin="round"/>
+                          <g id="Stroke 3">
+                            <path fillRule="evenodd" clipRule="evenodd"
+                                  d="M6.43945 9.99995L8.81345 12.373L13.5595 7.62695" fill="#369CFB"/>
+                            <path d="M6.43945 9.99995L8.81345 12.373L13.5595 7.62695" stroke="#130F26" strokeWidth="1.2"
+                                  strokeLinecap="round" strokeLinejoin="round"/>
+                          </g>
+                        </g>
+                      </svg>
+
+                  ) : (
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className={'cursor-pointer mr-2'}>
+                        <g id="Tick Square">
+                          <path id="Stroke 1" fillRule="evenodd" clipRule="evenodd"
+                                d="M14.334 0.75H5.665C2.644 0.75 0.75 2.889 0.75 5.916V14.084C0.75 17.111 2.635 19.25 5.665 19.25H14.333C17.364 19.25 19.25 17.111 19.25 14.084V5.916C19.25 2.889 17.364 0.75 14.334 0.75Z"
+                                stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </g>
+                      </svg>
+
+                  )}
+                </div>
                 Я принимаю Условия предоставления услуг и Политику
                 конфиденциальности.
               </label>
               {errorMessages.agreed && (
-                <p className="textError absolute w-[27rem]">
+                <p className="textError absolute text-sm lg:w-[27rem]">
                   {errorMessages.agreed}
                 </p>
               )}
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-700 mt-12 mb-16"
+              className={
+                " text-white text-base font-semibold  mx-auto flex justify-start py-3 rounded-md cursor-pointer  tracking-wide button-hover button-link mt-16 mb-4 px-3.5"
+              }
             >
-              Зарегистрироваться
+              <p className={""}>Завершить регистрацию</p>
+              <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={"ml-2.5"}
+              >
+                <path
+                    d="M8.5 5L15.5 12L8.5 19"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                />
+              </svg>
             </button>
+
           </form>
         </div>
       </div>

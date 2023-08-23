@@ -49,9 +49,9 @@ function FaqSect() {
         // Добавьте остальные вопросы и ответы
     ];
     return (
-        <section id='faq' >
-            <h2 className="lg:text-4xl sm:text-2xl sm:font-black lg:font-bold  lg:mt-40 sm:mt-24 tracking-wide	 text-center">FAQ</h2>
-            <div className={'sm:hidden lg:visible'}>
+        <section id='faq' className={'max-w-5xl mx-auto'}>
+            <h2 className="lg:text-4xl sm:text-2xl sm:font-black lg:font-bold lg:mt-40 sm:mt-24 tracking-wide	 text-center">FAQ</h2>
+            <div className={'sm:hidden lg:visible ml-[-10rem] mb-[-11rem]'}>
                 <img
                     src={coin5}
                     alt="img"

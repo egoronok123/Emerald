@@ -4,7 +4,6 @@ import photo2 from "../assets/svg/photo2.svg";
 import photo3 from "../assets/svg/photo3.svg";
 
 
-
 function ContactSect() {
 
     return (
@@ -13,51 +12,51 @@ function ContactSect() {
                 По вопросам <span className={"text-green-1"}> сотрудничества </span>
             </h2>
             <div className="flex lg:justify-between sm:flex-col mt-12 gap-7 ">
-                <div className="flex  items-center bg-opacity-30 lg:w-[25rem]">
+                <a
+                    href={"https://t.me/mettamorg"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={"flex items-center contactHref   bg-opacity-30 lg:w-[25rem]"}
+                >
                     <img src={photo1} alt="img" className={""} />
-                    <div>
-                        <p>CEO</p>
-                        <a
-                            href={"https://t.me/mettamorg"}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={"flex justify-center"}
-                        >
-                            <img src={telegram2} alt="img" className={" mr-2.5 "} />
-                            <p>@Ivan</p>
-                        </a>
+                    <div className={''}>
+                        <p className={'sm:text-lg sm:font-semibold'}>CEO</p>
+                        <div className={'flex justify-center'}>
+                            <img src={telegram2} alt="img" className={" mr-1.5 "}/>
+                            <p className={'sm:text-sm lg:font-normal transition-colors duration-300'}>@Ivan</p>
+                        </div>
                     </div>
-                </div>
-                <div className="flex  items-center bg-opacity-30 lg:w-[25rem]">
+                </a>
+                <a
+                    href={"https://t.me/mettamorg"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={"flex items-center contactHref   bg-opacity-30 lg:w-[25rem]"}
+                >
                     <img src={photo2} alt="img" className={""} />
-                    <div>
-                        <p>Manager</p>
-                        <a
-                            href={"https://t.me/mettamorg"}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={"flex justify-center"}
-                        >
-                            <img src={telegram2} alt="img" className={" mr-2.5 "} />
-                            <p>@Ivan</p>
-                        </a>
+                    <div className={''}>
+                        <p className={'sm:text-lg sm:font-semibold'}>Manager</p>
+                        <div className={'flex justify-center'}>
+                            <img src={telegram2} alt="img" className={" mr-1.5 "}/>
+                            <p className={'sm:text-sm lg:font-normal transition-colors duration-300'}>@Ivan</p>
+                        </div>
                     </div>
-                </div>
-                <div className="flex  items-center bg-opacity-30 lg:w-[25rem]">
+                </a>
+                <a
+                    href={"https://t.me/mettamorg"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={"flex items-center contactHref   bg-opacity-30 lg:w-[25rem]"}
+                >
                     <img src={photo3} alt="img" className={""} />
-                    <div>
-                        <p>Manager</p>
-                        <a
-                            href={"https://t.me/mettamorg"}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={"flex justify-center"}
-                        >
-                            <img src={telegram2} alt="img" className={" mr-2.5 "} />
-                            <p>@Ivan</p>
-                        </a>
-                    </div>
+                    <div className={''}>
+                        <p className={'sm:text-lg sm:font-semibold'}>Manager</p>
+                        <div className={'flex justify-center'}>
+                            <img src={telegram2} alt="img" className={" mr-1.5 "}/>
+                            <p className={'sm:text-sm lg:font-normal transition-colors duration-300'}>@Ivan</p>
+                        </div>
                 </div>
+                </a>
             </div>
         </section>
     );

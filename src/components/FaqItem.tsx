@@ -31,7 +31,7 @@ const FaqItem: React.FC<FaqItemProps> = ({
     return (
         <div className="mx-auto w-full ">
             <button
-                className={` font-bold my-3 mx-auto sm:p-3 lg:p-8 bg-opacity-30 buttonForm `}
+                className={` lg:font-bold sm:font-semibold my-3 mx-auto sm:p-3 lg:p-8 bg-opacity-30 buttonForm `}
                 onClick={onClick}
             >
                 <div className={`w-full`}>
@@ -46,7 +46,7 @@ const FaqItem: React.FC<FaqItemProps> = ({
                     </div>
 
                         {isOpen &&<p
-                            className={`mt-2 font-sans text-left ${
+                            className={`mt-2 sm:text-sm sm:font-normal lg:text-lg lg:font-semibold text-left ${
                                 isOpen ? "animate-fadeIn" : "opacity-0"
                             }`}
                         >

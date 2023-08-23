@@ -2,14 +2,14 @@ import {Link as LinkRout, Link} from "react-router-dom";
 import logoImg from "../assets/emerald_logo.svg";
 
 import telegram2 from "../assets/svg/Telegram2.svg";
-import logoImg2 from "../assets/svg/EmeraldParners.svg";
+import logoImg2 from "../assets/svg/EmeraldPartners.svg";
 
 
 const Footer = () => {
     return (
         <footer className={'mt-36 h-full sm:px-2 footer bottom-0 left-0'}>
 
-            <div className={'flex justify-between lg:max-w-[73rem]  py-4 items-center mx-auto borderB'}>
+            <div className={'flex justify-between lg:max-w-[71rem]  py-4 items-center mx-auto borderB'}>
                 <div className="items-center flex justify-start">
                     <Link to="/ru/#start" className={"flex  cursor-pointer"}>
                         <img src={logoImg} alt="img" className={""} />
@@ -45,17 +45,17 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className={"flex justify-center nav-link2   "}
                 >
-                    <img src={telegram2} alt="img" className={" mr-2.5 "} />
+                    <img src={telegram2} alt="img" className={" mr-1 "} />
                     <p>Чат Телеграм</p>
 
                 </LinkRout>
 
             </div>
-            <div className={'flex flex-col '}>
-                <div className={'mx-auto mt-4'}>
-                    <p>Публичная оферта</p>
+            <div className={'flex sm:flex-col lg:max-w-[71rem] mx-auto lg:justify-between'}>
+                <div className={'flex lg:justify-end sm:mx-auto mt-4 lg:order-2'}>
+                    <div className={'cursor-pointer'}>Публичная оферта</div>
                 </div>
-                <div className={'mx-auto mt-4 mb-4'}>
+                <div className={'flex lg:justify-start sm:mx-auto  mt-4 mb-4 lg:order-1'}>
                     <p className={'text-gray-500'}>EmeraldPartners © 2023</p>
                 </div>
 

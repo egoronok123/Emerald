@@ -3,7 +3,7 @@ import TelegramForm from '../components/TelegramForm.tsx';
 
 const App: React.FC = () => {
     return (
-        <div className={'regContent   mt-36 '}>
+        <div className={'regContent   mt-28 '}>
             <TelegramForm />
         </div>
     );

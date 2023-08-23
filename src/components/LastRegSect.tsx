@@ -13,7 +13,7 @@ function LastRegSect() {
                 <img
                     src={coin7}
                     alt="img"
-                    className={"absolute ml-[80rem] hidden mt-[-3rem]  z-10"}
+                    className={"absolute ml-[3rem]  mt-[-2rem]  z-10"}
                 />
 
                 <img
@@ -24,7 +24,7 @@ function LastRegSect() {
                 <img
                     src={emerald3}
                     alt="img"
-                    className={"absolute ml-[-1rem] mt-[9rem] z-10"}
+                    className={"absolute ml-[-5rem] mt-[9rem] z-10"}
                 />
                 <img
                     src={emerald4}
@@ -51,7 +51,7 @@ function LastRegSect() {
                         to={"registration"}
                         className={"flex justify-start py-4 "}
                     >
-                        <p className={"ml-16"}>Регистрация</p>
+                        <p className={"sm:ml-16 lg:ml-10"}>Регистрация</p>
                         <svg
                             width="24"
                             height="24"
