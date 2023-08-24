@@ -128,7 +128,7 @@ function WelcomeSect() {
             </div>
         </div>
             <div className={"lg:w-8/12  lg:mt-36 sm:mt-48 flex flex-col px-4"}>
-                <h2 className="lg:text-5xl sm:text-3xl sm2:text-4xl  sm3:text-5xl lg:font-bold sm:max-w-[26rem] sm2:max-w-[32rem] sm3:max-w-[40rem] sm:font-black mb-4 leading-[1.2] tracking-wide "
+                <h2 className="lg:text-5xl sm:text-[2.125rem] sm2:text-4xl  sm3:text-5xl lg:font-bold sm:max-w-[22rem] sm2:max-w-[32rem] sm3:max-w-[40rem] sm:font-bold mb-4 leading-[1.2] tracking-wide "
                     ref={welcomeDivRef1}>
                     Добро пожаловать в партнерскую программу <br/>
                 <span className={"text-green-1"}> Emerald Partners </span>

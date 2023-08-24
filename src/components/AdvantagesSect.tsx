@@ -12,8 +12,8 @@ function AdvantagesSect() {
 
     return (
         <section className="lg:mt-40 sm:mt-24 sm:px-3 lg:px-8" id="advantages">
-            <h2 className="lg:text-4xl sm:text-2xl lg:font-bold sm:font-black mt-12 text-center">
-                Почему арбитражники выбирают <br />
+            <h2 className="lg:text-4xl sm:text-2xl sm:max-w-[22rem] mx-auto sm:font-bold  mt-12 text-center">
+                Почему арбитражники выбирают
                 <span className={"text-green-1"}> Emerald Partners</span>
             </h2>
             <img
@@ -22,7 +22,7 @@ function AdvantagesSect() {
                 className={"sm:hidden absolute ml-[65rem] mt-[1rem] "}
             />
             <div className="grid lg:grid-cols-4 lg:gap-4 lg:gap-y-16 sm:ml-6 sm:gap-y-8 lg:mt-20 sm:mt-10 px-1 ">
-                <div className=" lg:h-40 sm:h-24 flex lg:flex-col items-center  bg-opacity-30">
+                <div className=" lg:h-32 sm:h-[5.5rem] flex lg:flex-col items-center  bg-opacity-30">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage ">
                             <image href={arrowTrend} className="svgImage2" />
@@ -33,7 +33,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-24 flex lg:flex-col items-center bg-opacity-30">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center bg-opacity-30">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={thunder} className="svgImage2" />
@@ -44,7 +44,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-24 flex lg:flex-col items-center  bg-opacity-30">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center  bg-opacity-30">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={coinCircle} className="svgImage2" />
@@ -55,7 +55,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-24 flex lg:flex-col items-center  bg-opacity-30">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center  bg-opacity-30">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={rocket} className="svgImage2" />
@@ -67,7 +67,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-24 flex lg:flex-col items-center  bg-opacity-30">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center  bg-opacity-30">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={map} className="svgImage2" />
@@ -78,7 +78,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-24 flex lg:flex-col items-center  bg-opacity-30">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center  bg-opacity-30">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={headset} className="svgImage2" />
@@ -89,7 +89,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-24 flex lg:flex-col items-center  bg-opacity-30">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center  bg-opacity-30">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={commetSmile} className="svgImage2" />
@@ -100,7 +100,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-24 flex lg:flex-col items-center  bg-opacity-30">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center  bg-opacity-30 ">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={chartMixed} className="svgImage2" />

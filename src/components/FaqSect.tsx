@@ -49,9 +49,9 @@ function FaqSect() {
         // Добавьте остальные вопросы и ответы
     ];
     return (
-        <section id='faq' className={'max-w-5xl mx-auto'}>
-            <h2 className="lg:text-4xl sm:text-2xl sm:font-black lg:font-bold lg:mt-40 sm:mt-24 tracking-wide	 text-center">FAQ</h2>
-            <div className={'sm:hidden lg:visible ml-[-10rem] mb-[-11rem]'}>
+        <section id='faq' className={'max-w-5xl mx-auto lg:mt-40 sm:mt-24'}>
+            <h2 className="lg:text-4xl sm:text-2xl sm:font-black lg:font-bold  tracking-wide text-center">FAQ</h2>
+            <div className={'sm:hidden lg:visible ml-[-10rem] mb-[-17rem]'}>
                 <img
                     src={coin5}
                     alt="img"
@@ -80,7 +80,7 @@ function FaqSect() {
             </div>
 
 
-            <div className="mx-auto p-8 px-4">
+            <div className="mx-auto p-8 px-4 lg:mt-72">
                 {faqData.map((item, index) => (
                     <FaqItem
                         key={index}

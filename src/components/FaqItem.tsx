@@ -31,12 +31,12 @@ const FaqItem: React.FC<FaqItemProps> = ({
     return (
         <div className="mx-auto w-full ">
             <button
-                className={` lg:font-bold sm:font-semibold my-3 mx-auto sm:p-3 lg:p-8 bg-opacity-30 buttonForm `}
+                className={` lg:font-bold sm:font-semibold my-3 mx-auto sm:pl-5 sm:pr-5 sm:pt-6 sm:pb-6 lg:p-8 bg-opacity-30 buttonForm `}
                 onClick={onClick}
             >
                 <div className={`w-full`}>
                     <div className="flex justify-between items-center ">
-                        <div className="pr-6 lg:text-lg sm:text-base ">
+                        <div className="pr-4 lg:text-lg sm:text-base text-left">
                             {question}
                         </div>
 

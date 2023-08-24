@@ -122,16 +122,17 @@
    }
 
 }
-body{
-   /*background: linear-gradient(109.75deg, #0A1328 -14.58%, #4771DB 111.67%, #0D1426 111.68%);*/
 
-   /*background: url("./assets/Rectangle 4.png") no-repeat center center;*/
-  background: linear-gradient(109.75deg, #192952 -14.58%, #4771DB 111.67%, #0D1426 111.68%), url("./assets/Rectangle 4.png") no-repeat center center;
+   body{
+      background:  url("./assets/Rectangle 5.png") no-repeat center center, linear-gradient(93.08deg, #0F1C3D -44.96%, #4771DB 100.81%, #0D1426 100.82%);
+      background-blend-mode: overlay, normal;
+      background-size: cover;
+      cursor: auto;
+   }
 
-   background-blend-mode: overlay, normal;
-   background-size: cover;
-   cursor: auto;
-}
+
+
+
 .background-svg1 {
    position: absolute;
    top: 0;
@@ -464,7 +465,7 @@ body{
    text-align: center;
 }
 .line1{
-   height: 3690px;
+
 }
 .text-gray-1{
    color:#EBEFF4;
