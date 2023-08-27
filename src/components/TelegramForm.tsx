@@ -125,7 +125,7 @@ const RegistrationForm: React.FC = () => {
           setErrorMessages((prevErrors) => ({
             ...prevErrors,
             agreed:
-              "Вы должны согласиться с условиями предоставления услуг и политикой конфиденциальности.",
+              "Пожалуйста, подтвердите Условия и соглашения.",
           }));
         } else {
           setErrorMessages((prevErrors) => ({
