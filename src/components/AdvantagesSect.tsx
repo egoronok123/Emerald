@@ -12,7 +12,7 @@ function AdvantagesSect() {
 
     return (
         <section className="lg:mt-40 sm:mt-24 sm:px-3 lg:px-8" id="advantages">
-            <h2 className="lg:text-4xl sm:text-2xl sm:max-w-[22rem] mx-auto sm:font-bold  mt-12 text-center">
+            <h2 className="lg:text-4xl sm:text-2xl sm:max-w-[22rem] mx-auto font-bold  mt-12 text-center">
                 Почему арбитражники выбирают
                 <span className={"text-green-1"}> Emerald Partners</span>
             </h2>
@@ -22,14 +22,14 @@ function AdvantagesSect() {
                 className={"sm:hidden absolute ml-[65rem] mt-[1rem] "}
             />
             <div className="grid lg:grid-cols-4 lg:gap-4 lg:gap-y-16 sm:ml-6 sm:gap-y-8 lg:mt-20 sm:mt-10 px-1 ">
-                <div className=" lg:h-32 sm:h-[5.5rem] flex lg:flex-col items-center  bg-opacity-30">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center  bg-opacity-30">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage ">
                             <image href={arrowTrend} className="svgImage2" />
                         </svg>
                     </div>
                     <p className={"sm:text-left lg:text-center text-sm text-gray-1 sm:ml-[2.3rem] lg:mt-[2.5rem] px-[1rem]"}>
-                        Высокие ставки и апрув
+                        Высокие ставки и аппрув
                     </p>
                 </div>
 

@@ -40,7 +40,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <LinkRout
-                    to={"https://t.me/mettamorg" }
+                    to={"https://t.me/emeraldpartners_chat" }
                     target="_blank"
                     rel="noopener noreferrer"
                     className={"flex justify-center nav-link2   "}

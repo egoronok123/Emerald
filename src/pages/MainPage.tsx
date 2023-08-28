@@ -18,7 +18,7 @@ const MainPage = () => {
       <AdvantagesSect/>
       <section className="px-4" id={"cases"} >
         <h2 className="lg:text-4xl sm:text-2xl sm:font-black lg:font-bold  lg:mt-40 sm:mt-32 text-center ">Кейсы</h2>
-        <div className="mx-auto mt-4 flex justify-center">
+        <div className="mx-auto mt-12 flex justify-center">
           <Slider></Slider>
         </div>
       </section>

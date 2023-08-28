@@ -46,7 +46,7 @@ const FaqItem: React.FC<FaqItemProps> = ({
                     </div>
 
                         {isOpen &&<p
-                            className={`mt-2 sm:text-sm sm:font-normal lg:text-lg lg:font-semibold text-left ${
+                            className={`mt-2 sm:text-sm sm:font-normal lg:text-sm lg:font-semibold text-left ${
                                 isOpen ? "animate-fadeIn" : "opacity-0"
                             }`}
                         >

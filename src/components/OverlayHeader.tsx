@@ -8,10 +8,9 @@ interface OverlayHeaderProps {
 }
 
 const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => {
-    // Обработчик события клика на фоновый элемент
     const handleOverlayClick = () => {
         if (isOpen) {
-            toggleMenu(); // Закрываем OverlayHeader, только если он открыт
+            toggleMenu();
         }
     };
     return (
@@ -47,7 +46,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
 
                 {/* Ваше дополнительное меню здесь */}
                 <ul className="text-white text-base font-semibold  items-center mt-12">
-                    <Link to="/ru/#advantages" onClick={toggleMenu}>
+                    <Link to="/#advantages" onClick={toggleMenu}>
                         <li className="py-4 px-4 relative cursor-pointer  font-semibold hover:text-[#369CFB] transition-colors duration-300">
                             <div
                                 className="border-t border-b opacity-10 absolute top-0 bottom-0 left-0 right-0 bg-B7B6CC"></div>
@@ -55,7 +54,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                         </li>
                     </Link>
 
-                    <Link to="/ru/#cases" onClick={toggleMenu}>
+                    <Link to="/#cases" onClick={toggleMenu}>
                         <li className="py-4 px-4 relative cursor-pointer  font-semibold hover:text-[#369CFB] transition-colors duration-300">
                             <div
                                 className="border-t border-b opacity-10 absolute top-0 bottom-0 left-0 right-0 bg-B7B6CC"></div>
@@ -63,7 +62,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                         </li>
                     </Link>
 
-                    <Link to="/ru/#faq" onClick={toggleMenu}>
+                    <Link to="/#faq" onClick={toggleMenu}>
                         <li className="py-4 px-4 relative cursor-pointer  font-semibold hover:text-[#369CFB] transition-colors duration-300">
                             <div
                                 className="border-t border-b opacity-10 absolute top-0 bottom-0 left-0 right-0 bg-B7B6CC"></div>
@@ -71,7 +70,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                         </li>
                     </Link>
 
-                    <Link to="/ru/#contacts" onClick={toggleMenu}>
+                    <Link to="/#contacts" onClick={toggleMenu}>
                         <li className="py-4 px-4 relative cursor-pointer  font-semibold hover:text-[#369CFB] transition-colors duration-300">
                             <div
                                 className="border-t border-b opacity-10 absolute top-0 bottom-0 left-0 right-0 bg-B7B6CC"></div>
@@ -82,7 +81,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
 
                 {/* Добавьте второй <ul> сюда */}
                 <ul className="` text-white flex flex-col absolute bottom-0 ">
-                    <Link to={"/ru/registration"} onClick={toggleMenu} className=" w-80 mx-auto">
+                    <Link to={"/registration"} onClick={toggleMenu} className=" w-80 mx-auto">
                         <li>
                             <button
                                 className={
@@ -138,7 +137,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                     </Link>
 
                     <LinkRout
-                        to={"https://t.me/mettamorg"}
+                        to={"https://t.me/emeraldpartners_chat"}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={"  w-80 mx-auto mb-10 "}

@@ -7,17 +7,28 @@
    padding: 0;
 
 }
+body{
+   background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin'%3E%3Cdefs%3E%3CradialGradient id='a' x1='0%25' x2='100%25' y1='0%25' y2='100%25' r='60%25'%3E%3Cstop offset='0' stop-color='%23217897'/%3E%3Cstop offset='1' stop-color='%230e2e42'/%3E%3C/radialGradient%3E%3Cfilter id='b'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7'/%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='2' intercept='-.5'/%3E%3CfeFuncG type='linear' slope='2' intercept='-.5'/%3E%3CfeFuncB type='linear' slope='2' intercept='-.5'/%3E%3C/feComponentTransfer%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='1'/%3E%3C/feComponentTransfer%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 .15'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23b)'/%3E%3C/svg%3E");
 
+   background-blend-mode: overlay, normal;
+   background-size: cover;
+   cursor: auto;
+   box-shadow: 0 9px 25px 0 rgba(6, 47, 105, 0.60);
+}
    .container {
       position: relative; /* Должен быть position: relative; чтобы абсолютно позиционированные элементы работали правильно */
       max-width: 100%; /* Ограничиваем ширину контейнера до 100% ширины родительского элемента */
       overflow: hidden; /* Скрываем часть изображения, которая выходит за пределы контейнера */
    }
 
-   .emeraldFirstGroup{
-      position: absolute;
-   }
 @layer components {
+   .header-mob{
+      background: linear-gradient(130deg, #0F1C3D 0%, #163fa6 99.99%, #102352 100%), url("./assets/mobile/headerBackgroundMobile.png") no-repeat center center;
+      background-blend-mode:  normal;
+      background-size: cover;
+      box-shadow: 0 9px 25px 0 rgba(6, 47, 105, 0.60);
+      width: 100%;
+   }
    .nav-link{
       position: relative;
       text-decoration: none;
@@ -43,13 +54,7 @@
    .nav-link:hover::after {
       width: 100%;
    }
-   .header-mob{
-      background: linear-gradient(130deg, #0F1C3D 0%, #163fa6 99.99%, #102352 100%), url("./assets/mobile/headerBackgroundMobile.png") no-repeat center center;
-      background-blend-mode:  normal;
-      background-size: cover;
-      box-shadow: 0 9px 25px 0 rgba(6, 47, 105, 0.60);
-      width: 100%;
-   }
+
    .burgerActive{
       border-radius: 8px 0 0 8px;
       background: #062243;
@@ -97,19 +102,7 @@
       border-radius: 50%;
 
    }
-   .svgBlock2:before{
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      border-radius: 50%;
-      filter: blur(7px);
-      transform: scale(1.04);
-      box-shadow: 0 0 10px 2px rgba(92, 210, 222, 0.44);
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-   }
+
    .svgImage3{
       position: absolute;
       left:5px;
@@ -123,13 +116,10 @@
 
 }
 
-   body{
-      background:  url("./assets/Rectangle5.png") no-repeat center center, linear-gradient(93.08deg, #0F1C3D -44.96%, #4771DB 100.81%, #0D1426 100.82%);
-      background-blend-mode: overlay, normal;
-      background-size: cover;
-      cursor: auto;
-   }
 
+.emeraldFirstGroup{
+   position: absolute;
+}
 
 
 
@@ -407,12 +397,9 @@
 }
 
 
-
 .buttonForm{
    width: 100%;
 }
-
-
 
 @keyframes fadeIn {
    from {

@@ -6,7 +6,7 @@ import burger1 from "../assets/mobile/burger1.svg";
 import  { useEffect, useState } from "react";
 
 import OverlayHeader from "./OverlayHeader";
-import {Link} from "react-router-dom"; // Импортируйте OverlayHeader
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -150,7 +150,6 @@ const Header = () => {
             </div>
 
 
-            {/* Добавьте OverlayHeader с учетом isMenuOpen */}
             <OverlayHeader isOpen={isOpen} toggleMenu={toggleMenu} />
         </header>
     );

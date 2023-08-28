@@ -22,7 +22,6 @@ export default function App() {
     return (
         <Swiper
             breakpoints={{
-                // when window width is >= 640px
                 320: {
 
                     slidesPerView: 1,
@@ -34,7 +33,6 @@ export default function App() {
                 modifier: 0,
             }
                 },
-                // when window width is >= 768px
                 1000: {
 
                     slidesPerView: 2,

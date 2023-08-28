@@ -15,8 +15,8 @@ const RegistrationForm: React.FC = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [telegramNickname, setTelegramNickname] = useState("");
   const [agreed, setAgreed] = useState(false);
-  const [trafficSource, setTrafficSource] = useState(""); // Добавлено поле для источника трафика
-  const [experience, setExperience] = useState(""); // Добавлено поле для опыта работы
+  const [trafficSource, setTrafficSource] = useState("");
+  const [experience, setExperience] = useState("");
   const [errorMessages, setErrorMessages] = useState({
     name: "",
     email: "",
@@ -486,7 +486,7 @@ const RegistrationForm: React.FC = () => {
               )}
             </div>
             <div>
-              <div className="svgBlock2  mt-[0.45rem]  ">
+              <div className="svgBlock  mt-[0.45rem]  ">
                 <svg className="svgImage3">
                   <image href={shieldDone} className="svgImage4"/>
                 </svg>
@@ -615,12 +615,13 @@ const RegistrationForm: React.FC = () => {
                 }}
               >
                 <option value="">Выберите источник трафика</option>
-                <option value="Источник 1">Источник 1</option>
-                <option value="Источник 2">Источник 2</option>
-                <option value="Источник 3">Источник 3</option>
-                <option value="Источник 4">Источник 4</option>
-                <option value="Источник 5">Источник 5</option>
-                {/* ... Добавьте ещё пункты */}
+                <option value="Гемблинг">Гемблинг</option>
+                <option value="Беттинг">Беттинг</option>
+                <option value="Адалт">Адалт</option>
+                <option value="Крипто">Крипто</option>
+                <option value="Финансы">Финансы</option>
+                <option value="Нутра">Нутра</option>
+                <option value="Товарка">Товарка</option>
               </select>
               {errorMessages.trafficSource && (
                 <p className="textError absolute text-sm">

@@ -13,7 +13,7 @@ function ContactSect() {
             </h2>
             <div className="flex lg:justify-between sm:flex-col mt-12 gap-7 ">
                 <a
-                    href={"https://t.me/mettamorg"}
+                    href={"https://t.me/jumansss"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={"flex items-center contactHref   bg-opacity-30 lg:w-[25rem]"}
@@ -23,12 +23,12 @@ function ContactSect() {
                         <p className={'sm:text-lg sm:font-semibold'}>CEO</p>
                         <div className={'flex justify-center'}>
                             <img src={telegram2} alt="img" className={" mr-1.5 "}/>
-                            <p className={'sm:text-sm lg:font-normal transition-colors duration-300'}>@Ivan</p>
+                            <p className={'sm:text-sm lg:font-normal transition-colors duration-300'}>@jumansss</p>
                         </div>
                     </div>
                 </a>
                 <a
-                    href={"https://t.me/mettamorg"}
+                    href={"https://t.me/SuppEmeraldPartners"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={"flex items-center contactHref   bg-opacity-30 lg:w-[25rem]"}
@@ -38,7 +38,7 @@ function ContactSect() {
                         <p className={'sm:text-lg sm:font-semibold'}>Manager</p>
                         <div className={'flex justify-center'}>
                             <img src={telegram2} alt="img" className={" mr-1.5 "}/>
-                            <p className={'sm:text-sm lg:font-normal transition-colors duration-300'}>@Ivan</p>
+                            <p className={'sm:text-sm lg:font-normal transition-colors duration-300'}>@SuppEmeraldPartners</p>
                         </div>
                     </div>
                 </a>
@@ -50,10 +50,10 @@ function ContactSect() {
                 >
                     <img src={photo3} alt="img" className={""} />
                     <div className={''}>
-                        <p className={'sm:text-lg sm:font-semibold'}>Manager</p>
+                        <p className={'sm:text-lg sm:font-semibold'}>Tech Support</p>
                         <div className={'flex justify-center'}>
                             <img src={telegram2} alt="img" className={" mr-1.5 "}/>
-                            <p className={'sm:text-sm lg:font-normal transition-colors duration-300'}>@Ivan</p>
+                            <p className={'sm:text-sm lg:font-normal transition-colors duration-300'}>@Metamorg</p>
                         </div>
                 </div>
                 </a>
