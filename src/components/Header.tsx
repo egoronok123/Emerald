@@ -54,7 +54,7 @@ const Header = () => {
                 }
             >
                 <div className="py-4 sm:ml-2 lg:w-1/4  items-center lg:flex lg:justify-start">
-                    <Link to="/ru/#start" className={"flex cursor-pointer"}>
+                    <Link to="/#start" className={"flex cursor-pointer"}>
                         <img src={logoImg} alt="img" className={""} />
                         <img src={logoImg2} alt="img" className={"ml-2"} />
                     </Link>
@@ -65,7 +65,7 @@ const Header = () => {
                         isOpen ? "sm:hidden" : "sm:hidden"
                     }`}
                 >
-                    <Link to="/ru/#advantages">
+                    <Link to="/#advantages">
                         <li
                             className={
                                 "ml-3 lg:ml-0 my-2 cursor-pointer lg:nav-link font-normal"
@@ -75,7 +75,7 @@ const Header = () => {
                         </li>
                     </Link>
 
-                    <Link to="/ru/#cases">
+                    <Link to="/#cases">
                         <li
                             className={
                                 "ml-3 lg:ml-0 my-2 cursor-pointer lg:nav-link font-normal"
@@ -85,7 +85,7 @@ const Header = () => {
                         </li>
                     </Link>
 
-                    <Link to="/ru/#faq">
+                    <Link to="/#faq">
                         <li
                             className={
                                 "ml-3 lg:ml-0 my-2 cursor-pointer lg:nav-link font-normal"
@@ -94,7 +94,7 @@ const Header = () => {
                             FAQ
                         </li>
                     </Link>
-                    <Link to="/ru/#contacts">
+                    <Link to="/#contacts">
                         <li
                             className={
                                 "ml-3 lg:ml-0 my-2 cursor-pointer lg:nav-link  font-normal"
@@ -136,7 +136,7 @@ const Header = () => {
                         </li>
                     </Link>
 
-                    <Link to={"/ru/registration"} className={"ml-8  flex justify-center"}>
+                    <Link to={"/registration"} className={"ml-8  flex justify-center"}>
                         <li
                             className={
                                 "  py-1.5 lg:px-8 px-3 sm:w-48  border-2 border-solid border-blue-500 button-hover2 font-semibold rounded-md  cursor-pointer flex justify-center items-center "

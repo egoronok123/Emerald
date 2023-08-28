@@ -4,7 +4,7 @@ import './index.css'
 import { RouterProvider, createBrowserRouter} from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage";
 import Layout from "./pages/Layout";
-import Rus from "./pages/Rus.tsx";
+import MainPage from "./pages/MainPage.tsx";
 import Registration from "./pages/Registration.tsx";
 
 
@@ -18,11 +18,11 @@ const router = createBrowserRouter([
         children:[
             {
 
-                path: '/ru',
-                element: <Rus/>,
+                path: '/',
+                element: <MainPage/>,
             },
             {
-                path: '/ru/registration',
+                path: '/registration',
                 element: <Registration/>,
             },
 

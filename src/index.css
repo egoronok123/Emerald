@@ -124,7 +124,7 @@
 }
 
    body{
-      background:  url("./assets/Rectangle 5.png") no-repeat center center, linear-gradient(93.08deg, #0F1C3D -44.96%, #4771DB 100.81%, #0D1426 100.82%);
+      background:  url("./assets/Rectangle5.png") no-repeat center center, linear-gradient(93.08deg, #0F1C3D -44.96%, #4771DB 100.81%, #0D1426 100.82%);
       background-blend-mode: overlay, normal;
       background-size: cover;
       cursor: auto;

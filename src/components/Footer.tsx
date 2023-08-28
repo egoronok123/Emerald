@@ -11,28 +11,28 @@ const Footer = () => {
 
             <div className={'flex justify-between lg:max-w-[71rem]  py-4 items-center mx-auto borderB'}>
                 <div className="items-center flex justify-start">
-                    <Link to="/ru/#start" className={"flex  cursor-pointer"}>
+                    <Link to="/#start" className={"flex  cursor-pointer"}>
                         <img src={logoImg} alt="img" className={""} />
                         <img src={logoImg2} alt="img" className={" ml-2"} />
                     </Link>
                 </div>
                 <div>
                     <ul className=" sm:hidden lg:visible  text-white flex  justify-center gap-11 mr-10 items-center  ">
-                        <Link to="/ru/#advantages">
+                        <Link to="/#advantages">
                             <li className={"my-2 cursor-pointer nav-link font-normal"}>
 
                                 Преимущества
                             </li>
                         </Link>
 
-                        <Link to="/ru/#cases">
+                        <Link to="/#cases">
                             <li className={"my-2 cursor-pointer nav-link font-normal"}> Кейсы</li>
                         </Link>
 
-                        <Link to="/ru/#faq">
+                        <Link to="/#faq">
                             <li className={"my-2 cursor-pointer nav-link font-normal"}> FAQ</li>
                         </Link>
-                        <Link to="/ru/#contacts">
+                        <Link to="/#contacts">
                             <li className={" my-2 cursor-pointer nav-link  font-normal"}>
                                 Контакты
                             </li>

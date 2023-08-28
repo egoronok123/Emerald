@@ -8,7 +8,7 @@ export default function ErrorPage(){
             <img src={img} alt='img' className={'w-80'}/>
             <Link
                 className={'bg-sky-500 rounded-md px-6 py-2 hover:bg-sky-600'}
-                to={`/ru`}>
+                to={`/`}>
                 Back
                 </Link>
         </div>

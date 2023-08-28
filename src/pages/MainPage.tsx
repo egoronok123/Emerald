@@ -8,7 +8,7 @@ import LastRegSect from "../components/LastRegSect.tsx";
 
 
 
-const Rus = () => {
+const MainPage = () => {
 
 
   return (
@@ -28,4 +28,4 @@ const Rus = () => {
     </div>
   );
 };
-export default Rus;
+export default MainPage;
