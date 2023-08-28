@@ -486,7 +486,7 @@ const RegistrationForm: React.FC = () => {
               )}
             </div>
             <div>
-              <div className="svgBlock  mt-[0.45rem]  ">
+              <div className="svgBlock2  mt-[0.45rem]  ">
                 <svg className="svgImage3">
                   <image href={shieldDone} className="svgImage4"/>
                 </svg>
