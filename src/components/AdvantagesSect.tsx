@@ -7,13 +7,14 @@ import map from "../assets/svg/Map.svg";
 import headset from "../assets/svg/headset.svg";
 import commetSmile from "../assets/svg/comment-smile.svg";
 import chartMixed from "../assets/svg/Chart_Mixed.svg";
+import {useTranslation} from "react-i18next";
 
 function AdvantagesSect() {
-
+    const {t} = useTranslation();
     return (
         <section className="lg:mt-40 sm:mt-24 sm:px-3 lg:px-8" id="advantages">
             <h2 className="lg:text-4xl sm:text-2xl sm:max-w-[22rem] mx-auto font-bold  mt-12 text-center">
-                Почему арбитражники выбирают
+                {t('advantagesSect.mainText')}
                 <span className={"text-green-1"}> Emerald Partners</span>
             </h2>
             <img
@@ -29,7 +30,7 @@ function AdvantagesSect() {
                         </svg>
                     </div>
                     <p className={"sm:text-left lg:text-center text-sm text-gray-1 sm:ml-[2.3rem] lg:mt-[2.5rem] px-[1rem]"}>
-                        Высокие ставки и аппрув
+                        {t('advantagesSect.text1')}
                     </p>
                 </div>
 
@@ -40,7 +41,7 @@ function AdvantagesSect() {
                         </svg>
                     </div>
                     <p className={"sm:text-left lg:text-center text-sm text-gray-1 sm:ml-[2.3rem] lg:mt-[2.5rem] px-[1rem]"}>
-                        Подбор подходящих офферов, прибыльные и актуальные связки
+                        {t('advantagesSect.text2')}
                     </p>
                 </div>
 
@@ -51,7 +52,7 @@ function AdvantagesSect() {
                         </svg>
                     </div>
                     <p className={"sm:text-left lg:text-center text-sm text-gray-1 sm:ml-[2.3rem] lg:mt-[2.5rem] px-[1rem]"}>
-                        Меньше усилий = больше профита
+                        {t('advantagesSect.text3')}
                     </p>
                 </div>
 
@@ -62,8 +63,7 @@ function AdvantagesSect() {
                         </svg>
                     </div>
                     <p className={"sm:text-left lg:text-center text-sm text-gray-1 sm:ml-[2.3rem] lg:mt-[2.5rem] px-[1rem]"}>
-                        Вы всегда найдете привлекательные условия под любой источник
-                        трафика
+                        {t('advantagesSect.text4')}
                     </p>
                 </div>
 
@@ -74,7 +74,7 @@ function AdvantagesSect() {
                         </svg>
                     </div>
                     <p className={"sm:text-left lg:text-center text-sm text-gray-1 sm:ml-[2.3rem] lg:mt-[2.5rem] px-[1rem]"}>
-                        Гео: Весь мир
+                        {t('advantagesSect.text5')}
                     </p>
                 </div>
 
@@ -85,7 +85,7 @@ function AdvantagesSect() {
                         </svg>
                     </div>
                     <p className={"sm:text-left lg:text-center text-sm text-gray-1 sm:ml-[2.3rem] lg:mt-[2.5rem] px-[1rem]"}>
-                        Оперативный саппорт 24/7
+                        {t('advantagesSect.text6')}
                     </p>
                 </div>
 
@@ -96,7 +96,7 @@ function AdvantagesSect() {
                         </svg>
                     </div>
                     <p className={"sm:text-left lg:text-center text-sm text-gray-1 sm:ml-[2.3rem] lg:mt-[2.5rem] px-[1rem]"}>
-                        Помощь в заливе трафика и введение
+                        {t('advantagesSect.text7')}
                     </p>
                 </div>
 
@@ -107,7 +107,7 @@ function AdvantagesSect() {
                         </svg>
                     </div>
                     <p className={"sm:text-left lg:text-center text-sm text-gray-1 sm:ml-[2.3rem] lg:mt-[2.5rem] px-[1rem]"}>
-                        Статистика в режиме реального времени
+                        {t('advantagesSect.text8')}
                     </p>
                 </div>
             </div>

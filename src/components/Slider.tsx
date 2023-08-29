@@ -14,11 +14,12 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 import {Link as LinkRout} from "react-router-dom";
 import telegram from "../assets/svg/Telegram.svg";
+import {useTranslation} from "react-i18next";
 
 
 
 export default function App() {
-
+    const {t} = useTranslation();
     return (
         <Swiper
             breakpoints={{
@@ -67,7 +68,7 @@ export default function App() {
                             className={"imgMain mx-auto "}
                             alt={'image'}/>
                         <div  className="flex flex-col items-center bg-opacity-30-2 textMain  mx-auto ">
-                            <h2>Кейс на Латинскую Америку</h2>
+                            <h2>{t('casesSect.text1')}</h2>
                             <button
                                 className={
                                     "text-white font-bold mx-auto    rounded-md cursor-pointer mt-4 tracking-wide  button-hover button-link w-52"
@@ -79,7 +80,7 @@ export default function App() {
                                     className={"flex justify-center py-2"}
                                 >
                                     <img src={telegram} alt="img" className={"w-18 mr-2.5 "} />
-                                    <p>Читать статью</p>
+                                    <p>{t('casesSect.buttonText')}</p>
 
                                 </LinkRout>
                             </button>

@@ -10,10 +10,11 @@ import coinMob1 from "../assets/mobile/coinMob1.png";
 import coinMob2 from "../assets/mobile/coinMob2.png";
 import emeraldMob1 from "../assets/mobile/emeraldMob1.png";
 import emeraldMob2 from "../assets/mobile/emeraldMob2.png";
+import {useTranslation} from "react-i18next";
 
 function WelcomeSect() {
     gsap.registerPlugin(ScrollTrigger)
-
+    const {t} = useTranslation();
 
     const welcomeDivRef1 = useRef(null);
     const welcomeDivRef2 = useRef(null);
@@ -128,14 +129,14 @@ function WelcomeSect() {
             </div>
         </div>
             <div className={"lg:w-8/12  lg:mt-36 sm:mt-48 flex flex-col px-4"}>
-                <h2 className="lg:text-5xl sm:text-[2.125rem] sm2:text-4xl  sm3:text-5xl lg:font-bold sm:max-w-[22rem] sm2:max-w-[32rem] sm3:max-w-[40rem] sm:font-bold mb-4 leading-[1.2] tracking-wide "
+                <h2 className="lg:text-5xl sm:text-[2.125rem] sm2:text-4xl  sm3:text-5xl lg:font-bold sm:max-w-[22rem] sm2:max-w-[32rem] sm3:max-w-[40rem] lg:max-w-[40rem] sm:font-bold mb-4 leading-[1.2] tracking-wide "
                     ref={welcomeDivRef1}>
-                    Добро пожаловать в партнерскую программу <br/>
+                    {t('welcomeSect.mainText')}<br/>
                 <span className={"text-green-1"}> Emerald Partners </span>
             </h2>
             <h3 className="font-normal lg:text-base sm:text-sm text-gray-300 mb-2 tracking-wide"
                 ref={welcomeDivRef2}>
-                Окунитесь в царство изумрудных богатств уже сегодня!
+                {t('welcomeSect.subText')}
             </h3>
             <button
                 className={
@@ -147,7 +148,7 @@ function WelcomeSect() {
                     to={"registration"}
                     className={"flex  py-4 px-1 ml-1"}
                 >
-                    <p className={"ml-8"}>Регистрация</p>
+                    <p className={"ml-8"}>  {t('welcomeSect.buttonText')}</p>
                     <svg
                         width="24"
                         height="24"

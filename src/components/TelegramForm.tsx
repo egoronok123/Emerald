@@ -6,9 +6,11 @@ import regCoin3 from "../assets/regCoin3.png";
 import regEmerald1 from "../assets/regEmerald1.png";
 import regEmerald2 from "../assets/regEmerald2.png";
 import shieldDone from "../assets/svg/ShieldDone.svg";
+import {useTranslation} from "react-i18next";
 
 
 const RegistrationForm: React.FC = () => {
+  const {t} = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -210,12 +212,10 @@ const RegistrationForm: React.FC = () => {
         )}`,
       )
       .then(() => {
-        console.log("Сообщение успешно отправлено в Telegram!");
-        // Здесь можно добавить обработку успешной отправки (например, показать уведомление об успехе)
+
       })
       .catch((error) => {
         console.error("Ошибка при отправке сообщения в Telegram:", error);
-        // Здесь можно добавить обработку ошибок (например, показать уведомление об ошибке)
       });
     setName("");
     setEmail("");
@@ -314,7 +314,7 @@ const RegistrationForm: React.FC = () => {
             <div className="relative">
               <input
                 type="text"
-                placeholder="Как вас зовут?"
+                placeholder= {t('registration.placeholderName')}
                 className={`w-full mt-10 p-2 pl-9  rounded text-black focus1 ${
                   errorMessages.name ? "input-error" : ""
                 }`}
@@ -426,7 +426,7 @@ const RegistrationForm: React.FC = () => {
             <div className="mt-8 relative">
               <input
                 type="password"
-                placeholder="Пароль"
+                placeholder={t('registration.placeholderPassword')}
                 className={`w-full p-2 pl-9  rounded text-black focus1 ${
                   errorMessages.password ? "input-error" : ""
                 }`}
@@ -491,13 +491,12 @@ const RegistrationForm: React.FC = () => {
                   <image href={shieldDone} className="svgImage4"/>
                 </svg>
               </div>
-              <p className={'ml-11 mt-6 text-xs text-justify pr-2'}>Пароль должен содержать от 8 символов, состоящих из
-                латинских заглавных и маленьких букв, минимум одной цифры и специального символа: @$!%*?&#</p>
+              <p className={'ml-11 mt-6 text-xs text-justify pr-2'}>{t('registration.passwordInfo')}</p>
             </div>
             <div className="mt-4 relative">
               <input
                 type="password"
-                placeholder="Повторите пароль"
+                placeholder= {t('registration.placeholderPassword2')}
                 className={`w-full p-2 pl-9  rounded text-black focus1 ${
                   errorMessages.confirmPassword ? "input-error" : ""
                 }`}
@@ -560,7 +559,7 @@ const RegistrationForm: React.FC = () => {
             <div className="mt-8 relative">
               <input
                 type="text"
-                placeholder="Ваш никнейм в телеграме"
+                placeholder={t('registration.placeholderTelegram')}
                 className={`w-full p-2 pl-9  rounded text-black focus1 ${
                   errorMessages.telegramNickname ? "input-error" : ""
                 }`}
@@ -597,7 +596,7 @@ const RegistrationForm: React.FC = () => {
             </div>
             <div className="mt-8">
               <label htmlFor="trafficSource" className="block ">
-                С каким источником трафика работаете?
+               {t('registration.textSelect')}
               </label>
               <select
                 id="trafficSource"
@@ -614,7 +613,7 @@ const RegistrationForm: React.FC = () => {
                   validateField("trafficSource", trafficSource);
                 }}
               >
-                <option value="">Выберите источник трафика</option>
+                <option value="">{t('registration.placeholderSelect')}</option>placeholderSelect
                 <option value="Гемблинг">Гемблинг</option>
                 <option value="Беттинг">Беттинг</option>
                 <option value="Адалт">Адалт</option>
@@ -631,7 +630,7 @@ const RegistrationForm: React.FC = () => {
             </div>
             <div className="mt-8">
               <label htmlFor="experience" className="block">
-                Опишите ваш опыт работы?
+                {t('registration.textTextArea')}
               </label>
               <textarea
                 id="experience"
@@ -649,7 +648,7 @@ const RegistrationForm: React.FC = () => {
                 }}
                 maxLength={300}
                 rows={4}
-                placeholder="Опишите ваш опыт работы здесь..."
+                placeholder={t('registration.placeholderTextArea')}
               />
               {errorMessages.experience && (
                 <p className="textError absolute text-sm">{errorMessages.experience}</p>
@@ -694,8 +693,7 @@ const RegistrationForm: React.FC = () => {
 
                   )}
                 </div>
-                Я принимаю Условия предоставления услуг и Политику
-                конфиденциальности.
+                {t('registration.textCheckBox')}
               </label>
               {errorMessages.agreed && (
                 <p className="textError absolute text-sm lg:w-[27rem]">
@@ -709,7 +707,7 @@ const RegistrationForm: React.FC = () => {
                 " text-white text-base font-semibold  mx-auto flex justify-start py-3 rounded-md cursor-pointer  tracking-wide button-hover button-link mt-16 mb-4 px-3.5"
               }
             >
-              <p className={""}>Завершить регистрацию</p>
+              <p className={""}>     {t('registration.textButton')}</p>
               <svg
                   width="24"
                   height="24"

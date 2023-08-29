@@ -2,14 +2,15 @@ import photo1 from "../assets/svg/photo.svg";
 import telegram2 from "../assets/svg/Telegram2.svg";
 import photo2 from "../assets/svg/photo2.svg";
 import photo3 from "../assets/svg/photo3.svg";
+import {useTranslation} from "react-i18next";
 
 
 function ContactSect() {
-
+    const {t} = useTranslation();
     return (
         <section id={'contacts'} className={'px-4'}>
             <h2 className="lg:text-4xl sm:text-2xl sm:font-black lg:font-bold  lg:mt-40 sm:mt-20 text-center">
-                По вопросам <span className={"text-green-1"}> сотрудничества </span>
+                {t('contactSect.mainText1')}<span className={"text-green-1"}> {t('contactSect.mainText2')} </span>
             </h2>
             <div className="flex lg:justify-between sm:flex-col mt-12 gap-7 ">
                 <a

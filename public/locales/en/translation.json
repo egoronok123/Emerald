@@ -1,0 +1,75 @@
+{
+  "header": {
+    "headerNav1": "Advantages",
+    "headerNav2": "Cases",
+    "headerNav3": "FAQ",
+    "headerNav4": "Contacts",
+    "headerLogIn": "Log In",
+    "headerSignUp": "Sign Up"
+  },
+  "welcomeSect": {
+    "mainText": "Welcome to the cpa affiliate network",
+    "subText": "Dive into the realm of emerald riches today!",
+    "buttonText": "Sign Up",
+    "aboutUsMainText": "About us",
+    "aboutUsSubText": "We are a web team with years of expertise in verticals. Having tested most traffic sources, geo and felt all the pains of the arbitrage sphere, we have pooled our knowledge and experience together.",
+    "OurGoalMainText": "Our goal",
+    "OurGoalSubText": "We will do everything so that you can earn more and not think about problems. We take care of the rest!"
+  },
+  "advantagesSect": {
+    "mainText": "Why arbitrageurs choose",
+    "text1": "High stakes and upside",
+    "text2": "Selection of suitable offers, profitable and relevant bundles",
+    "text3": "Less effort. More profit",
+    "text4": "You will always find attractive terms for any traffic source",
+    "text5": "Geo: All over the world",
+    "text6": "Operational support 24/7",
+    "text7": "Help with traffic flooding and introductions",
+    "text8": "Real-time statistics"
+  },
+  "casesSect": {
+    "mainText": "Cases",
+    "buttonText": "Read article",
+    "text1": "The case for Latin America"
+  },
+  "faqSect": {
+    "question1": "Why should I trust you?",
+    "answer1": "Emerald Partners is an official affiliate program. A team of qualified specialists works around the clock to make all processes run smoothly. In its work Emerald Partners is guided by three main principles: reliability, transparency and security. Each partner is assigned a personal manager - contact him at any convenient time.",
+    "question2": "Is there any negativity on your part?",
+    "answer2": "No, there is no such thing as negative carryover. Transparency and trust are the two pillars on which we build our relationships with our partners, so you can be sure that there will be no unpleasant surprises on our part.",
+    "question3": "How much does it cost?",
+    "answer3": "It's absolutely free for all Emerald Partners affiliate program members.",
+    "question4": "What is banned traffic?",
+    "answer4": "Banned traffic - This is traffic that will not be paid by the advertiser. The list of banned traffic: - Frod, bots, motivated traffic, multi-accounts, user recruitment, cashback.",
+    "question5": "On what grounds is traffic recognized as ford traffic?",
+    "answer5": "The advertiser conducts a traffic audit where many factors are checked. Among the metrics: site activity, repeat visits/conversions, time on landing pages, ROI, and more.",
+    "question6": "What happens if a webmaster casts ford or banned traffic?",
+    "answer6": "All infused traffic is not paid = recognized as ford traffic. The webmaster's account will be blocked/deleted. Further work will be impossible."
+  },
+  "contactSect": {
+    "mainText1": "On matters of",
+    "mainText2": "cooperation"
+  },
+  "lastRegSect": {
+    "mainText1": "Join us",
+    "mainText2": "today"
+  },
+  "other": {
+    "telegram": "Telegram chat",
+    "offer": "Public offer"
+  },
+  "registration": {
+    "placeholderName": "What's your name?",
+    "placeholderEmail": "",
+    "placeholderPassword": "Password",
+    "placeholderPassword2": "Repeat the password",
+    "placeholderTelegram": "Your Telegram login",
+    "passwordInfo": "Password must contain from 8 characters consisting of Latin capital and small letters, at least one digit and a special character: @$!%*?&#",
+    "placeholderSelect": "Select the traffic source",
+    "textSelect": "What source of traffic are you working with?",
+    "textTextArea": "Describe your work experience in detail",
+    "placeholderTextArea": "Describe your experience here...",
+    "textCheckBox": "I accept the Terms of Service and Privacy Policy.",
+    "textButton": "Complete Sign Up"
+  }
+}

@@ -3,9 +3,11 @@ import logoImg from "../assets/emerald_logo.svg";
 
 import telegram2 from "../assets/svg/Telegram2.svg";
 import logoImg2 from "../assets/svg/EmeraldPartners.svg";
+import {useTranslation} from "react-i18next";
 
 
 const Footer = () => {
+    const {t} = useTranslation();
     return (
         <footer className={'mt-36 h-full sm:px-2 footer bottom-0 left-0'}>
 
@@ -21,20 +23,20 @@ const Footer = () => {
                         <Link to="/#advantages">
                             <li className={"my-2 cursor-pointer nav-link font-normal"}>
 
-                                Преимущества
+                                {t('header.headerNav1')}
                             </li>
                         </Link>
 
                         <Link to="/#cases">
-                            <li className={"my-2 cursor-pointer nav-link font-normal"}> Кейсы</li>
+                            <li className={"my-2 cursor-pointer nav-link font-normal"}>           {t('header.headerNav2')}</li>
                         </Link>
 
                         <Link to="/#faq">
-                            <li className={"my-2 cursor-pointer nav-link font-normal"}> FAQ</li>
+                            <li className={"my-2 cursor-pointer nav-link font-normal"}>           {t('header.headerNav3')}</li>
                         </Link>
                         <Link to="/#contacts">
                             <li className={" my-2 cursor-pointer nav-link  font-normal"}>
-                                Контакты
+                                {t('header.headerNav4')}
                             </li>
                         </Link>
                     </ul>
@@ -46,14 +48,14 @@ const Footer = () => {
                     className={"flex justify-center nav-link2   "}
                 >
                     <img src={telegram2} alt="img" className={" mr-1 "} />
-                    <p>Чат Телеграм</p>
+                    <p> {t('other.telegram')}</p>
 
                 </LinkRout>
 
             </div>
             <div className={'flex sm:flex-col lg:max-w-[71rem] mx-auto lg:justify-between'}>
                 <div className={'flex lg:justify-end sm:mx-auto mt-4 lg:order-2'}>
-                    <div className={'cursor-pointer'}>Публичная оферта</div>
+                    <div className={'cursor-pointer'}> {t('other.offer')}</div>
                 </div>
                 <div className={'flex lg:justify-start sm:mx-auto  mt-4 mb-4 lg:order-1'}>
                     <p className={'text-gray-500'}>EmeraldPartners © 2023</p>

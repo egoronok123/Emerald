@@ -7,8 +7,11 @@ import  { useEffect, useState } from "react";
 
 import OverlayHeader from "./OverlayHeader";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher.tsx";
 
 const Header = () => {
+    const {t} = useTranslation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isOpen, setIsMenuOpen] = useState(false);
 
@@ -71,7 +74,7 @@ const Header = () => {
                                 "ml-3 lg:ml-0 my-2 cursor-pointer lg:nav-link font-normal"
                             }
                         >
-                            Преимущества
+                            {t('header.headerNav1')}
                         </li>
                     </Link>
 
@@ -81,7 +84,7 @@ const Header = () => {
                                 "ml-3 lg:ml-0 my-2 cursor-pointer lg:nav-link font-normal"
                             }
                         >
-                            Кейсы
+                            {t('header.headerNav2')}
                         </li>
                     </Link>
 
@@ -91,7 +94,7 @@ const Header = () => {
                                 "ml-3 lg:ml-0 my-2 cursor-pointer lg:nav-link font-normal"
                             }
                         >
-                            FAQ
+                            {t('header.headerNav3')}
                         </li>
                     </Link>
                     <Link to="/#contacts">
@@ -100,9 +103,12 @@ const Header = () => {
                                 "ml-3 lg:ml-0 my-2 cursor-pointer lg:nav-link  font-normal"
                             }
                         >
-                            Контакты
+                            {t('header.headerNav4')}
                         </li>
                     </Link>
+                    <li>
+                        <LanguageSwitcher />
+                    </li>
                 </ul>
                 <ul
                     className={`py-4 px-4 lg:px-0 text-white flex justify-between lg:justify-end lg:w-1/3 items-center transition-all duration-500 ease-in ${
@@ -132,7 +138,7 @@ const Header = () => {
                                     </g>
                                 </g>
                             </svg>
-                            <p>Вход</p>
+                            <p>{t('header.headerLogIn')}</p>
                         </li>
                     </Link>
 
@@ -143,7 +149,7 @@ const Header = () => {
                             }
                         >
                             <img src={regImg} alt="img" className={"w-18 mr-2.5 py-1"} />
-                            <p>Регистрация</p>
+                            <p>{t('header.headerSignUp')}</p>
                         </li>
                     </Link>
                 </ul>

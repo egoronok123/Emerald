@@ -6,8 +6,8 @@ import ErrorPage from "./pages/ErrorPage";
 import Layout from "./pages/Layout";
 import MainPage from "./pages/MainPage.tsx";
 import Registration from "./pages/Registration.tsx";
-
-
+// @ts-ignore
+import './i18n.js'
 
 const router = createBrowserRouter([
     {

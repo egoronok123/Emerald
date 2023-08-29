@@ -3,10 +3,11 @@ import coin9 from "../assets/Coin9.png";
 import emerald3 from "../assets/emerald3.png";
 import emerald4 from "../assets/emerald4.png";
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 
 function LastRegSect() {
-
+    const {t} = useTranslation();
     return (
         <section className={'px-4'}>
             <div className={'sm:hidden lg:visible'}>
@@ -38,9 +39,9 @@ function LastRegSect() {
                     "lg:w-[48rem] lg:h-80 h-64 bg-opacity-30 mx-auto lg:mt-40 sm:mt-32 flex flex-col justify-center z-20"
                 }
             >
-                <h2 className="lg:text-4xl sm:text-2xl font-bold text-center">
-                    Присоеденияйся к нам <br /> уже
-                    <span className={"text-green-1"}> сегодня </span>
+                <h2 className="lg:text-4xl sm:text-2xl font-bold text-center lg:w-[30rem] sm:w-[20rem] mx-auto">
+                    {t('lastRegSect.mainText1')}
+                    <span className={"text-green-1"}>  {t('lastRegSect.mainText2')} </span>
                 </h2>
                 <button
                     className={
@@ -51,7 +52,7 @@ function LastRegSect() {
                         to={"registration"}
                         className={"flex justify-start py-4 "}
                     >
-                        <p className={"sm:ml-16 lg:ml-10"}>Регистрация</p>
+                        <p className={"sm:ml-16 lg:ml-10"}>{t('welcomeSect.buttonText')}</p>
                         <svg
                             width="24"
                             height="24"
