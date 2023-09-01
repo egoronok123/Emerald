@@ -56,20 +56,33 @@
   },
   "other": {
     "telegram": "Telegram chat",
-    "offer": "Public offer"
+    "offer": "Public offer",
+    "menu": "Menu:"
   },
   "registration": {
+    "mainText": "Sign up",
     "placeholderName": "What's your name?",
+    "errorName": "Enter your name.",
     "placeholderEmail": "",
+    "errorEmail": "Enter email.",
+    "errorEmail2": "Incorrect email format.",
     "placeholderPassword": "Password",
+    "errorPassword": "Enter password.",
+    "errorPasswordTwo": "The password does not meet the requirements.",
     "placeholderPassword2": "Repeat the password",
-    "placeholderTelegram": "Your Telegram login",
+    "errorPassword2": "Confirm password.",
+    "errorPassword2Two": "The passwords don't match.",
     "passwordInfo": "Password must contain from 8 characters consisting of Latin capital and small letters, at least one digit and a special character: @$!%*?&#",
+    "placeholderTelegram": "Your Telegram login",
+    "errorTelegram": "Enter your Telegram nickname.",
     "placeholderSelect": "Select the traffic source",
+    "errorSelect": "Select a traffic source.",
     "textSelect": "What source of traffic are you working with?",
     "textTextArea": "Describe your work experience in detail",
+    "errorTextArea": "Enter your experience.",
     "placeholderTextArea": "Describe your experience here...",
     "textCheckBox": "I accept the Terms of Service and Privacy Policy.",
-    "textButton": "Complete Sign Up"
+    "errorCheckBox": "Please confirm Terms and Agreements.",
+    "textButton": "Complete the registration process"
   }
 }

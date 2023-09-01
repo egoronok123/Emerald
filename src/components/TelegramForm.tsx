@@ -37,7 +37,7 @@ const RegistrationForm: React.FC = () => {
         if (value.trim() === "") {
           setErrorMessages((prevErrors) => ({
             ...prevErrors,
-            name: "Введите ваше имя.",
+            name: `${t('registration.errorName')}`
           }));
         } else {
           setErrorMessages((prevErrors) => ({ ...prevErrors, name: "" }));
@@ -47,7 +47,7 @@ const RegistrationForm: React.FC = () => {
         if (value.trim() === "") {
           setErrorMessages((prevErrors) => ({
             ...prevErrors,
-            email: "Введите email.",
+            email: `${t('registration.errorEmail')}`
           }));
         } else {
           setErrorMessages((prevErrors) => ({ ...prevErrors, email: "" }));
@@ -57,12 +57,12 @@ const RegistrationForm: React.FC = () => {
         if (value.trim() === "") {
           setErrorMessages((prevErrors) => ({
             ...prevErrors,
-            password: "Введите пароль.",
+            password: `${t('registration.errorPassword')}`
           }));
         } else if (!passwordPattern.test(value)) {
           setErrorMessages((prevErrors) => ({
             ...prevErrors,
-            password: "Пароль не соответствует требованиям.",
+            password: `${t('registration.errorPasswordTwo')}`
           }));
         } else {
           setErrorMessages((prevErrors) => ({ ...prevErrors, password: "" }));
@@ -72,12 +72,12 @@ const RegistrationForm: React.FC = () => {
         if (value.trim() === "") {
           setErrorMessages((prevErrors) => ({
             ...prevErrors,
-            confirmPassword: "Подтвердите пароль.",
+            confirmPassword:  `${t('registration.errorPassword2')}`
           }));
         } else if (value !== password) {
           setErrorMessages((prevErrors) => ({
             ...prevErrors,
-            confirmPassword: "Пароли не совпадают.",
+            confirmPassword:  `${t('registration.errorPassword2Two')}`
           }));
         } else {
           setErrorMessages((prevErrors) => ({
@@ -90,7 +90,7 @@ const RegistrationForm: React.FC = () => {
         if (value.trim() === "") {
           setErrorMessages((prevErrors) => ({
             ...prevErrors,
-            telegramNickname: "Введите никнейм в Telegram.",
+            telegramNickname: `${t('registration.errorTelegram')}`
           }));
         } else {
           setErrorMessages((prevErrors) => ({
@@ -103,7 +103,7 @@ const RegistrationForm: React.FC = () => {
         if (value.trim() === "") {
           setErrorMessages((prevErrors) => ({
             ...prevErrors,
-            experience: "Введите ваш опыт.",
+            experience:  `${t('registration.errorTextArea')}`
           }));
         } else {
           setErrorMessages((prevErrors) => ({ ...prevErrors, experience: "" }));
@@ -113,7 +113,7 @@ const RegistrationForm: React.FC = () => {
         if (value.trim() === "") {
           setErrorMessages((prevErrors) => ({
             ...prevErrors,
-            trafficSource: "Выберите источник трафика.",
+            trafficSource:  `${t('registration.errorSelect')}`
           }));
         } else {
           setErrorMessages((prevErrors) => ({
@@ -127,7 +127,7 @@ const RegistrationForm: React.FC = () => {
           setErrorMessages((prevErrors) => ({
             ...prevErrors,
             agreed:
-              "Пожалуйста, подтвердите Условия и соглашения.",
+                `${t('registration.errorCheckBox')}`
           }));
         } else {
           setErrorMessages((prevErrors) => ({
@@ -161,23 +161,20 @@ const RegistrationForm: React.FC = () => {
     validateField("experience", experience);
     validateField("trafficSource", trafficSource);
     validateField("agreed", agreed);
-    // validateField('agreed', agreed);
+
     e.preventDefault();
-    // Ваш токен Telegram-бота
     const telegramBotToken = "6637324148:AAEaiaQn-eGU9EhyQ-RalsLh8N6Eo1vayho";
 
-    // Ваш ID чата в Telegram, куда нужно отправить данные
     const chatId = "-1001945625263";
 
     if (!canSubmitForm()) {
-      // Если есть активные сообщения об ошибках, не отправляем форму
       return;
     }
 
     if (!emailIsValid(email)) {
       setErrorMessages((prevErrors) => ({
         ...prevErrors,
-        email: "Неправильный формат email.",
+        email: `${t('registration.errorEmail2')}`
       }));
       return;
     }
@@ -308,7 +305,7 @@ const RegistrationForm: React.FC = () => {
       <div className=" p-4  relative bg-opacity-30 max-w-4xl mx-auto z-20">
         <div className={"max-w-md mx-auto"}>
           <h2 className="lg:text-4xl sm:text-2xl font-semibold text-center mt-10">
-            Регистрация
+            {t('registration.mainText')}
           </h2>
           <form onSubmit={handleSubmit}>
             <div className="relative">

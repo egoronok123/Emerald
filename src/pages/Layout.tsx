@@ -7,7 +7,8 @@ import Footer from "../components/Footer.tsx";
 
 const Layout: FC = () => {
     return (
-        <div className={'container'}>
+
+        <div className={'container'} id="noise">
             <div className='font-inter text-white '>
             <ScrollToAnchor/>
             <Header/>
@@ -19,6 +20,7 @@ const Layout: FC = () => {
                 </div>
         </div>
         </div>
+
     )
 }
 export default Layout

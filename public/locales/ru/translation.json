@@ -56,20 +56,34 @@
   },
   "other": {
     "telegram": "Чат Телеграм",
-    "offer": "Публичная оферта"
+    "offer": "Публичная оферта",
+    "menu": "Меню:"
   },
   "registration": {
+    "mainText": "Регистрация",
     "placeholderName": "Как вас зовут?",
+    "errorName": "Введите ваше имя.",
     "placeholderEmail": "",
+    "errorEmail": "Введите email.",
+    "errorEmail2": "Неправильный формат email.",
     "placeholderPassword": "Пароль",
+    "errorPassword": "Введите пароль.",
+    "errorPasswordTwo": "Пароль не соответствует требованиям.",
     "placeholderPassword2": "Повторите пароль",
+    "errorPassword2":  "Подтвердите пароль.",
+    "errorPassword2Two": "Пароли не совпадают.",
     "passwordInfo": "Пароль должен содержать от 8 символов, состоящих из латинских заглавных и маленьких букв, минимум одной цифры и специального символа: @$!%*?&#",
     "placeholderTelegram": "Ваш логин Telegram",
+    "errorTelegram": "Введите никнейм в Telegram.",
     "placeholderSelect": "Выберите источник трафика",
+    "errorSelect": "Выберите источник трафика.",
     "textSelect": "С каким источником трафика работаете?",
     "textTextArea": "Опишите подробно свой опыт работы",
+    "errorTextArea": "Введите ваш опыт.",
     "placeholderTextArea": "Опишите ваш опыт работы здесь...",
     "textCheckBox": "Я принимаю Условия предоставления услуг и Политику конфиденциальности.",
+    "errorCheckBox":  "Пожалуйста, подтвердите Условия и соглашения.",
     "textButton": "Завершить регистрацию"
+
   }
 }

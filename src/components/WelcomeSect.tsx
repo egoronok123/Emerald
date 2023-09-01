@@ -138,6 +138,7 @@ function WelcomeSect() {
                 ref={welcomeDivRef2}>
                 {t('welcomeSect.subText')}
             </h3>
+
             <button
                 className={
                     " text-white font-bold   rounded-md cursor-pointer mt-11 tracking-wide  button-hover button-link w-52"

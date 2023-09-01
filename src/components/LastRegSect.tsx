@@ -1,4 +1,5 @@
 import coin7 from "../assets/Coin7.png";
+import coin8 from "../assets/Coin8.png";
 import coin9 from "../assets/Coin9.png";
 import emerald3 from "../assets/emerald3.png";
 import emerald4 from "../assets/emerald4.png";
@@ -14,9 +15,13 @@ function LastRegSect() {
                 <img
                     src={coin7}
                     alt="img"
-                    className={"absolute ml-[3rem]  mt-[-2rem]  z-10"}
+                    className={"absolute ml-[70rem]  mt-[-2rem]  z-10"}
                 />
-
+                <img
+                    src={coin8}
+                    alt="img"
+                    className={"absolute ml-[3rem] mt-[-4rem]  "}
+                />
                 <img
                     src={coin9}
                     alt="img"

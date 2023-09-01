@@ -1,5 +1,7 @@
 import {Link as LinkRout, Link} from "react-router-dom";
 import telegram2 from "../assets/svg/Telegram2.svg";
+import {useTranslation} from "react-i18next";
+import React from "react";
 
 
 interface OverlayHeaderProps {
@@ -8,6 +10,7 @@ interface OverlayHeaderProps {
 }
 
 const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => {
+    const {t} = useTranslation();
     const handleOverlayClick = () => {
         if (isOpen) {
             toggleMenu();
@@ -28,7 +31,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
             >
 
                 <div className={'flex justify-between px-4 py-4 w-80 items-center'}>
-                    <div><h2 className={'text-2xl font-bold '}>Меню:</h2></div>
+                    <div><h2 className={'text-2xl font-bold '}>{t('other.menu')}</h2></div>
                     <div
                         onClick={toggleMenu}
                         className={` cursor-pointer lg:hidden overflow-hidden  `}
@@ -50,7 +53,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                         <li className="py-4 px-4 relative cursor-pointer  font-semibold hover:text-[#369CFB] transition-colors duration-300">
                             <div
                                 className="border-t border-b opacity-10 absolute top-0 bottom-0 left-0 right-0 bg-B7B6CC"></div>
-                            Преимущества
+                            {t('header.headerNav1')}
                         </li>
                     </Link>
 
@@ -58,7 +61,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                         <li className="py-4 px-4 relative cursor-pointer  font-semibold hover:text-[#369CFB] transition-colors duration-300">
                             <div
                                 className="border-t border-b opacity-10 absolute top-0 bottom-0 left-0 right-0 bg-B7B6CC"></div>
-                            Кейсы
+                            {t('header.headerNav2')}
                         </li>
                     </Link>
 
@@ -66,7 +69,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                         <li className="py-4 px-4 relative cursor-pointer  font-semibold hover:text-[#369CFB] transition-colors duration-300">
                             <div
                                 className="border-t border-b opacity-10 absolute top-0 bottom-0 left-0 right-0 bg-B7B6CC"></div>
-                            FAQ
+                            {t('header.headerNav3')}
                         </li>
                     </Link>
 
@@ -74,7 +77,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                         <li className="py-4 px-4 relative cursor-pointer  font-semibold hover:text-[#369CFB] transition-colors duration-300">
                             <div
                                 className="border-t border-b opacity-10 absolute top-0 bottom-0 left-0 right-0 bg-B7B6CC"></div>
-                            Контакты
+                            {t('header.headerNav4')}
                         </li>
                     </Link>
                 </ul>
@@ -89,7 +92,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                                 }
                             >
 
-                                <p className={"ml-16"}>Регистрация</p>
+                                <p className={"ml-16"}>{t('header.headerSignUp')}</p>
                                 <svg
                                     width="24"
                                     height="24"
@@ -131,7 +134,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                                 </g>
                             </svg>
                             <div className={'  w-12 transition-colors duration-300'}>
-                                <p>Вход</p>
+                                <p>{t('header.headerLogIn')}</p>
                             </div>
                         </li>
                     </Link>
@@ -145,7 +148,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                     >
                         <li className={'flex justify-center font-semibold  hover:text-[#369CFB] transition-colors duration-300'}>
                             <img src={telegram2} alt="img" className={" mr-2.5 "}/>
-                            <p className={'text-base '}>Чат Телеграм</p>
+                            <p className={'text-base '}>{t('other.telegram')}</p>
                         </li>
 
 

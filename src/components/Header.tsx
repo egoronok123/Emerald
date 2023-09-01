@@ -39,10 +39,12 @@ const Header = () => {
       ${isScrolled ? "header-active" : ""}
       `}
         >
-
+            <div  className={" lg:hidden  transition-all duration-300 overflow-hidden "}>
+                <LanguageSwitcher />
+            </div>
             <div
                 onClick={toggleMenu}
-                className={"absolute right-4 top-[1.1rem] cursor-pointer lg:hidden  transition-all duration-300 overflow-hidden"}
+                className={"absolute right-4 top-[1rem] cursor-pointer lg:hidden  transition-all duration-300 overflow-hidden"}
             >
                 <img
                               src={ burger1}
@@ -56,7 +58,7 @@ const Header = () => {
                     "lg:px-4 lg:flex items-center lg:h-[4rem] lg:max-w-[73rem] mx-auto text-white font-inter text-base"
                 }
             >
-                <div className="py-4 sm:ml-2 lg:w-1/4  items-center lg:flex lg:justify-start">
+                <div className="py-4 sm:ml-2 lg:w-1/4  items-center sm:w-full sm:flex sm:justify-center  lg:flex lg:justify-start">
                     <Link to="/#start" className={"flex cursor-pointer"}>
                         <img src={logoImg} alt="img" className={""} />
                         <img src={logoImg2} alt="img" className={"ml-2"} />
