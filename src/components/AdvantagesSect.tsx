@@ -35,7 +35,7 @@ function AdvantagesSect() {
                 className={"sm:hidden coin4 absolute ml-[65rem] mt-[1rem] "}
             />
             <div className="grid lg:grid-cols-4 lg:gap-4 lg:gap-y-16 sm:ml-6 sm:gap-y-8 lg:mt-20 sm:mt-10 px-1 ">
-                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default bg-opacity-30 transform transition-transform hover:scale-105 duration-300">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default bg-opacity-30 transform transition-transform lg:hover-effect duration-300">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage ">
                             <image href={arrowTrend} className="svgImage2" />
@@ -46,7 +46,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center bg-opacity-30 cursor-default transform transition-transform hover:scale-105 duration-300">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center bg-opacity-30 cursor-default transform transition-transform lg:hover-effect duration-300">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={thunder} className="svgImage2" />
@@ -57,7 +57,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default bg-opacity-30 transform transition-transform hover:scale-105 duration-300">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default bg-opacity-30 transform transition-transform lg:hover-effect duration-300">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={coinCircle} className="svgImage2" />
@@ -68,8 +68,8 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default bg-opacity-30 transform transition-transform hover:scale-105 duration-300">
-                    <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
+                <div className="lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default bg-opacity-30 transform transition-transform lg:hover-effect duration-300">
+                    <div className="svgBlock sm:ml-[-1.8rem] lg:mt-[-2rem]">
                         <svg className="svgImage">
                             <image href={rocket} className="svgImage2" />
                         </svg>
@@ -79,7 +79,8 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default  bg-opacity-30 transform transition-transform hover:scale-105 duration-300">
+
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default  bg-opacity-30 transform transition-transform lg:hover-effect duration-300">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={map} className="svgImage2" />
@@ -90,7 +91,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default  bg-opacity-30 transform transition-transform hover:scale-105 duration-300">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default  bg-opacity-30 transform transition-transform lg:hover-effect duration-300">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={headset} className="svgImage2" />
@@ -101,7 +102,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default  bg-opacity-30 transform transition-transform hover:scale-105 duration-300">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default  bg-opacity-30 transform transition-transform lg:hover-effect duration-300">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={commetSmile} className="svgImage2" />
@@ -112,7 +113,7 @@ function AdvantagesSect() {
                     </p>
                 </div>
 
-                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default bg-opacity-30 transform transition-transform hover:scale-105 duration-300 ">
+                <div className=" lg:h-40 sm:h-[5.5rem] flex lg:flex-col items-center cursor-default bg-opacity-30 transform transition-transform lg:hover-effect duration-300 ">
                     <div className="svgBlock  sm:ml-[-1.8rem] lg:mt-[-2rem] ">
                         <svg className="svgImage">
                             <image href={chartMixed} className="svgImage2" />
