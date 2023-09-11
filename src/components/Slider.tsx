@@ -71,7 +71,7 @@ export default function App() {
                             <h2>{t('casesSect.text1')}</h2>
                             <button
                                 className={
-                                    "text-white font-bold mx-auto    rounded-md cursor-pointer mt-4 tracking-wide  button-hover button-link w-52"
+                                    "text-white font-bold mx-auto  btn-5  rounded-md cursor-pointer mt-4 tracking-wide  button-hover button-link w-52"
                                 }
                             >
                                 <LinkRout

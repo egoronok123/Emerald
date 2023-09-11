@@ -66,7 +66,7 @@ const Header = () => {
                 </div>
 
                 <ul
-                    className={`py-4 text-white lg:flex lg:justify-center lg:gap-11 lg:ml-20 items-center lg:w-2/4  transition-all duration-500 ease-in ${
+                    className={`py-4 text-white lg:flex lg:justify-center lg:gap-11  items-center lg:w-2/4  transition-all duration-500 ease-in ${
                         isOpen ? "sm:hidden" : "sm:hidden"
                     }`}
                 >
@@ -108,16 +108,14 @@ const Header = () => {
                             {t('header.headerNav4')}
                         </li>
                     </Link>
-                    <li>
-                        <LanguageSwitcher />
-                    </li>
+
                 </ul>
                 <ul
-                    className={`py-4 px-4 lg:px-0 text-white flex justify-between lg:justify-end lg:w-1/3 items-center transition-all duration-500 ease-in ${
+                    className={`py-4 px-4 lg:px-0 text-white flex justify-center lg:justify-end lg:w-1/3 items-center transition-all duration-500 ease-in ${
                         isOpen ? "sm:hidden" : "sm:hidden"
                     }`}
                 >
-                    <Link to={"logIn"} className={""}>
+                    <Link to={"logIn"} className={"mr-8"}>
                         <li
                             className={
                                 "my-2 cursor-pointer  flex  items-center hover-svg font-semibold"
@@ -144,7 +142,7 @@ const Header = () => {
                         </li>
                     </Link>
 
-                    <Link to={"/registration"} className={"ml-8  flex justify-center"}>
+                    <Link to={"/registration"} className={"mr-8  flex justify-center"}>
                         <li
                             className={
                                 "  py-1.5 lg:px-8 px-3 sm:w-48  border-2 border-solid border-blue-500 button-hover2 font-semibold rounded-md  cursor-pointer flex justify-center items-center "
@@ -154,6 +152,9 @@ const Header = () => {
                             <p>{t('header.headerSignUp')}</p>
                         </li>
                     </Link>
+                    <li className={'lg:visible sm:hidden transition-all duration-300 overflow-hidden '}>
+                        <LanguageSwitcher />
+                    </li>
                 </ul>
             </div>
 

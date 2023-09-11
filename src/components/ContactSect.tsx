@@ -17,7 +17,7 @@ function ContactSect() {
                     href={"https://t.me/jumansss"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={"flex items-center contactHref   bg-opacity-30 lg:w-[25rem]"}
+                    className={"flex items-center contactHref  transform transition-transform hover:scale-105 duration-300  bg-opacity-30 lg:w-[25rem]"}
                 >
                     <img src={photo1} alt="img" className={""} />
                     <div className={''}>
@@ -32,7 +32,7 @@ function ContactSect() {
                     href={"https://t.me/SuppEmeraldPartners"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={"flex items-center contactHref   bg-opacity-30 lg:w-[25rem]"}
+                    className={"flex items-center contactHref  transform transition-transform hover:scale-105 duration-300  bg-opacity-30 lg:w-[25rem]"}
                 >
                     <img src={photo2} alt="img" className={""} />
                     <div className={''}>
@@ -47,7 +47,7 @@ function ContactSect() {
                     href={"https://t.me/mettamorg"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={"flex items-center contactHref   bg-opacity-30 lg:w-[25rem]"}
+                    className={"flex items-center contactHref transform transition-transform hover:scale-105 duration-300  bg-opacity-30 lg:w-[25rem]"}
                 >
                     <img src={photo3} alt="img" className={""} />
                     <div className={''}>

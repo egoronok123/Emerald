@@ -20,6 +20,9 @@ function WelcomeSect() {
     const welcomeDivRef2 = useRef(null);
     const welcomeDivRef3 = useRef(null);
     useEffect(() => {
+
+
+
         const tl = gsap.timeline();
         tl.fromTo(
             welcomeDivRef1.current,
@@ -70,7 +73,7 @@ function WelcomeSect() {
                 opacity: 1,
                 scale:1,
                 stagger: 0.4
-            },0.5
+            },0.3
         ).fromTo(
             '.coinFirstGroup',
             {
@@ -81,7 +84,7 @@ function WelcomeSect() {
                 opacity: 1,
                 scale:1,
                 stagger: 0.4
-            },0.5
+            },0.3
         ).fromTo(
             '.lineGsap',
             {
@@ -93,9 +96,32 @@ function WelcomeSect() {
                 opacity: 1,
                 scale:1,
                 duration: 1,
-            },1.5
+            },1.2
         )
+        gsap.to('.coin1', {
+            y: -20, // Движение вверх на 20 пикселей
+            yoyo: true, // Повторять анимацию в обратном направлении
+            repeat: -1, // Бесконечное повторение
+            duration: 1, // Продолжительность одного цикла анимации в секундах
+            ease: "linear", // Линейное перемещение
+        });
+        gsap.to('.emerald2', {
+            y: 20, // Движение вверх на 20 пикселей
+            yoyo: true, // Повторять анимацию в обратном направлении
+            repeat: -1, // Бесконечное повторение
+            duration: 1, // Продолжительность одного цикла анимации в секундах
+            ease: "linear", // Линейное перемещение
+        });
+        // gsap.to('.emerald1', {
+        //     rotation: -30, // Движение вверх на 20 пикселей
+        //     yoyo: true, // Повторять анимацию в обратном направлении
+        //     repeat: -1, // Бесконечное повторение
+        //     duration: 4, // Продолжительность одного цикла анимации в секундах
+        //     ease: "linear", // Линейное перемещение
+        // });
     }, []);
+
+
 
 
     return (
@@ -114,7 +140,7 @@ function WelcomeSect() {
             <img
                 src={coinMob1}
                 alt="img"
-                className={"absolute coinFirstGroup ml-[21rem] mt-[6.5rem] z-10"}
+                className={"absolute coinFirstGroup  ml-[21rem] mt-[6.5rem] z-10"}
             />
             <img
                 src={coinMob2}
@@ -141,22 +167,23 @@ function WelcomeSect() {
 
             <button
                 className={
-                    " text-white font-bold   rounded-md cursor-pointer mt-11 tracking-wide  button-hover button-link w-52"
+                    " text-white font-bold    rounded-md cursor-pointer mt-11 tracking-wide  button-hover button-link w-52 btn-5"
                 }
                 ref={welcomeDivRef3}
             >
                 <Link
                     to={"registration"}
-                    className={"flex  py-4 px-1 ml-1"}
+                    className={"flex justify-center py-4 px-1 "}
                 >
-                    <p className={"ml-8"}>  {t('welcomeSect.buttonText')}</p>
+                    <p className={"ml-4"}>  {t('welcomeSect.buttonText')}</p>
+
                     <svg
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className={"ml-2.5"}
+                        className={"ml-2.5 svg1"}
                     >
                         <path
                             d="M8.5 5L15.5 12L8.5 19"
@@ -166,6 +193,7 @@ function WelcomeSect() {
                             strokeLinejoin="round"
                         />
                     </svg>
+
                 </Link>
             </button>
         </div>
@@ -173,22 +201,22 @@ function WelcomeSect() {
             <img
                 src={emerald1}
                 alt="img"
-                className={" absolute emeraldFirstGroup ml-[2rem] mt-[3rem] z-10"}
+                className={" absolute emerald1 emeraldFirstGroup ml-[2rem] mt-[3rem] z-10"}
             />
             <img
                 src={emerald2}
                 alt="img"
-                className={"absolute emeraldFirstGroup ml-[-rem] mt-[19rem]"}
+                className={"absolute emerald2 emeraldFirstGroup   mt-[17rem]"}
             />
             <img
                 src={coin1}
                 alt="img"
-                className={"absolute coinFirstGroup ml-[22rem] mt-[11rem]"}
+                className={"absolute coinFirstGroup coin1 ml-[22rem] mt-[9rem]"}
             />
             <img
                 src={coin2}
                 alt="img"
-                className={"absolute coinFirstGroup ml-[17rem] mt-[15.5rem] z-10"}
+                className={"absolute coinFirstGroup coin2 ml-[17rem] mt-[15.5rem] z-10"}
             />
             <img
                 src={coin3}

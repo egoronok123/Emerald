@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 import regCoin1 from "../assets/regCoin1.png";
 import regCoin2 from "../assets/regCoin2.png";
@@ -7,6 +7,7 @@ import regEmerald1 from "../assets/regEmerald1.png";
 import regEmerald2 from "../assets/regEmerald2.png";
 import shieldDone from "../assets/svg/ShieldDone.svg";
 import {useTranslation} from "react-i18next";
+import gsap from "gsap";
 
 
 const RegistrationForm: React.FC = () => {
@@ -151,7 +152,15 @@ const RegistrationForm: React.FC = () => {
       (agreed || errorMessages.agreed === "")
     );
   };
-
+  useEffect(() => {
+    gsap.to('.regCoin3', {
+      y: 30, // Движение вверх на 20 пикселей
+      yoyo: true, // Повторять анимацию в обратном направлении
+      repeat: -1, // Бесконечное повторение
+      duration: 1, // Продолжительность одного цикла анимации в секундах
+      ease: "linear", // Линейное перемещение
+    });
+  }, []);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     validateField("name", name);
     validateField("email", email);
@@ -246,17 +255,17 @@ const RegistrationForm: React.FC = () => {
         <img
             src={regCoin1}
             alt="img"
-            className={"absolute ml-[57rem] mt-[50rem] z-10"}
+            className={"absolute regCoin1 ml-[57rem] mt-[50rem] z-10"}
         />
         <img
             src={regCoin2}
             alt="img"
-            className={"absolute ml-[3rem] mt-[54rem] z-10"}
+            className={"absolute regCoin2 ml-[3rem] mt-[54rem] z-10"}
         />{" "}
         <img
             src={regCoin3}
             alt="img"
-            className={"absolute ml-[-6rem] mt-[21rem] z-10"}
+            className={"absolute regCoin3 ml-[-6rem] mt-[21rem] z-10"}
         />
         <img
             src={regEmerald1}
@@ -701,7 +710,7 @@ const RegistrationForm: React.FC = () => {
             <button
               type="submit"
               className={
-                " text-white text-base font-semibold  mx-auto flex justify-start py-3 rounded-md cursor-pointer  tracking-wide button-hover button-link mt-16 mb-4 px-3.5"
+                " text-white text-base font-semibold btn-5 mx-auto flex justify-start py-3 rounded-md cursor-pointer  tracking-wide button-hover button-link mt-16 mb-4 px-3.5"
               }
             >
               <p className={""}>     {t('registration.textButton')}</p>
@@ -711,7 +720,7 @@ const RegistrationForm: React.FC = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className={"ml-2.5"}
+                  className={"ml-2.5 svg1"}
               >
                 <path
                     d="M8.5 5L15.5 12L8.5 19"

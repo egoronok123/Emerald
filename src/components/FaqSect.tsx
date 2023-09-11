@@ -1,12 +1,22 @@
 import coin5 from "../assets/Coin5.png";
 import coin6 from "../assets/Coin6.png";
 import FaqItem from "./FaqItem.tsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
 import coinMob3 from "../assets/mobile/coinMob3.png";
+import gsap from "gsap";
 
 
 function FaqSect() {
+    useEffect(() => {
+        gsap.to('.coin6', {
+            y: 30, // Движение вверх на 20 пикселей
+            yoyo: true, // Повторять анимацию в обратном направлении
+            repeat: -1, // Бесконечное повторение
+            duration: 1, // Продолжительность одного цикла анимации в секундах
+            ease: "linear", // Линейное перемещение
+        });
+    }, []);
     const [activeQuestionIndex, setActiveQuestionIndex] = useState<number | null>(
         null,
     );
@@ -62,7 +72,7 @@ function FaqSect() {
                 <img
                     src={coin6}
                     alt="img"
-                    className={"absolute ml-[-2rem] mt-[26rem] z-10"}
+                    className={"absolute coin6 ml-[-2rem] mt-[26rem] z-10"}
                 />
 
 

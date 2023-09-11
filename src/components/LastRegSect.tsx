@@ -5,9 +5,24 @@ import emerald3 from "../assets/emerald3.png";
 import emerald4 from "../assets/emerald4.png";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+// import gsap from "gsap";
 
 
 function LastRegSect() {
+    // gsap.to('.coin7', {
+    //     y: -20, // Движение вверх на 20 пикселей
+    //     yoyo: true, // Повторять анимацию в обратном направлении
+    //     repeat: -1, // Бесконечное повторение
+    //     duration: 1, // Продолжительность одного цикла анимации в секундах
+    //     ease: "linear", // Линейное перемещение
+    // });
+    // gsap.to('.coin8', {
+    //     y: 20, // Движение вверх на 20 пикселей
+    //     yoyo: true, // Повторять анимацию в обратном направлении
+    //     repeat: -1, // Бесконечное повторение
+    //     duration: 1, // Продолжительность одного цикла анимации в секундах
+    //     ease: "linear", // Линейное перемещение
+    // });
     const {t} = useTranslation();
     return (
         <section className={'px-4'}>
@@ -15,27 +30,27 @@ function LastRegSect() {
                 <img
                     src={coin7}
                     alt="img"
-                    className={"absolute ml-[70rem]  mt-[-2rem]  z-10"}
+                    className={"absolute coin7 ml-[70rem]  mt-[4rem]  z-10"}
                 />
                 <img
                     src={coin8}
                     alt="img"
-                    className={"absolute ml-[3rem] mt-[-4rem]  "}
+                    className={"absolute coin8 ml-[3rem] mt-[-4rem]  "}
                 />
                 <img
                     src={coin9}
                     alt="img"
-                    className={"absolute ml-[60rem] mt-[10rem]  z-10"}
+                    className={"absolute coin9 ml-[60rem] mt-[10rem]  z-10"}
                 />
                 <img
                     src={emerald3}
                     alt="img"
-                    className={"absolute ml-[-5rem] mt-[9rem] z-10"}
+                    className={"absolute emerald3 ml-[-5rem] mt-[9rem] z-10"}
                 />
                 <img
                     src={emerald4}
                     alt="img"
-                    className={"absolute  ml-[52rem] mt-[-3rem]  "}
+                    className={"absolute emerald4 ml-[52rem] mt-[-3rem]  "}
                 />
             </div>
 
@@ -50,21 +65,21 @@ function LastRegSect() {
                 </h2>
                 <button
                     className={
-                        " text-white font-bold mx-auto rounded-md cursor-pointer mt-11 tracking-wide button-hover button-link lg:w-52 sm:w-[16rem]"
+                        " text-white font-bold btn-5 mx-auto rounded-md cursor-pointer mt-11 tracking-wide button-hover button-link lg:w-52 sm:w-[16rem]"
                     }
                 >
                     <Link
                         to={"registration"}
-                        className={"flex justify-start py-4 "}
+                        className={"flex justify-center py-4"}
                     >
-                        <p className={"sm:ml-16 lg:ml-10"}>{t('welcomeSect.buttonText')}</p>
+                        <p className={"ml-4"}>{t('welcomeSect.buttonText')}</p>
                         <svg
                             width="24"
                             height="24"
                             viewBox="0 0 24 24"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
-                            className={"ml-2.5"}
+                            className={"ml-2.5 svg1"}
                         >
                             <path
                                 d="M8.5 5L15.5 12L8.5 19"

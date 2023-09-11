@@ -40,7 +40,7 @@ const LanguageSwitcher: React.FC = () => {
                 {i18n.language === 'en' ? 'En' : 'Ru'}
             </div>
             {isOpen && (
-                <div className="origin-top-right relative top-0 rounded-md text-center shadow-lg bg-[#062243]">
+                <div className="origin-top-right relative lg:top-4 sm:top-0 lg:left-[-4rem] rounded-md text-center shadow-lg bg-[#062243]">
                     <div className="py-1">
                         {languages.map((language) => (
                             <div
