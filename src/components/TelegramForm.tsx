@@ -8,8 +8,8 @@ import regEmerald2 from "../assets/regEmerald2.png";
 import shieldDone from "../assets/svg/ShieldDone.svg";
 import {useTranslation} from "react-i18next";
 import gsap from "gsap";
-
-
+//import qs from 'qs'
+import FormData from 'form-data';
 const RegistrationForm: React.FC = () => {
   const {t} = useTranslation();
   const [name, setName] = useState("");
@@ -211,17 +211,23 @@ const RegistrationForm: React.FC = () => {
     // Формируем текст сообщения для отправки в Telegram
     const text = `Telegram: @${telegramNickname}\nEmail: ${email}\nName: ${name}\nИсточник трафика: ${trafficSource}\nОпыт работы: ${experience}
     `;
-
+    const form = new FormData();
     // };
     const affiseUrl = 'https://emerald.affise.com/signup';
-    const affiseData = {
-      email: email, // Замените на ваше значение email
-      password: password,
-      repeat_password: confirmPassword,
-      agree: agreed,
-      agree_use_info: agreed
+    form.append('email', `${email}`);
+    form.append('password', `${password}`);
+    form.append('repeat_password', `${confirmPassword}`);
+    form.append('agree', `${agreed}`);
+    form.append('agree_use_info', `${agreed}`);
 
-    }
+    // const affiseData = {
+    //   email: email, // Замените на ваше значение email
+    //   password: password,
+    //   repeat_password: confirmPassword,
+    //   agree: agreed,
+    //   agree_use_info: agreed
+    //
+    // }
 
     // Отправляем данные в Telegram через API бота
      axios
@@ -237,7 +243,15 @@ const RegistrationForm: React.FC = () => {
         console.error("Ошибка при отправке сообщения в Telegram:", error);
       });
 
-    await axios.post(affiseUrl, affiseData)
+
+    axios.post(affiseUrl, form, {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded', // Устанавливаем Content-Type для Form Data
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': '*',
+        'Access-Control-Allow-Credentials': 'true'
+      }
+    })
         .then(function (response) {
       console.log(response);
     })

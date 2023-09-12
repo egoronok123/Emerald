@@ -142,7 +142,7 @@ const Header = () => {
                         </li>
                     </Link>
 
-                    <Link to="/registration" className={"mr-8  flex justify-center"}>
+                    <Link to="/registration" className={"mr-8  flex justify-center"} target="_blank">
                         <li
                             className={
                                 "  py-1.5 lg:px-8 px-3 sm:w-48  border-2 border-solid border-blue-500 button-hover2 font-semibold rounded-md  cursor-pointer flex justify-center items-center "
