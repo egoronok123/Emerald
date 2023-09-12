@@ -91,8 +91,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                                     " text-white font-semibold  mx-auto flex justify-start py-4 rounded-md cursor-pointer  tracking-wide button-hover button-link w-[16rem] mb-4"
                                 }
                             >
-
-                                <p className={"ml-16"}>{t('header.headerSignUp')}</p>
+                                <p className={"ml-20"}>{t('header.headerSignUp')}</p>
                                 <svg
                                     width="24"
                                     height="24"
@@ -114,7 +113,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                         </li>
 
                     </Link>
-                    <Link to={"logIn"} className="w-80 mx-auto mb-4" onClick={toggleMenu}>
+                    <Link to={"https://emerald.affise.com/v2/sign/in"} className="w-80 mx-auto mb-4" onClick={toggleMenu}>
                         <li className=" cursor-pointer w-[13rem] flex justify-end  hover-svg font-semibold transition-colors duration-300">
                             <svg
                                 width="18"

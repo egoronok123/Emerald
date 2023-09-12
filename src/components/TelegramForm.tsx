@@ -161,7 +161,7 @@ const RegistrationForm: React.FC = () => {
       ease: "linear", // Линейное перемещение
     });
   }, []);
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     validateField("name", name);
     validateField("email", email);
     validateField("password", password);
@@ -206,13 +206,26 @@ const RegistrationForm: React.FC = () => {
       }));
       return;
     }
+
+
     // Формируем текст сообщения для отправки в Telegram
-    const text = `Telegram: ${telegramNickname}\nEmail: ${email}\nName: ${name}\nИсточник трафика: ${trafficSource}\nОпыт работы: ${experience}
+    const text = `Telegram: @${telegramNickname}\nEmail: ${email}\nName: ${name}\nИсточник трафика: ${trafficSource}\nОпыт работы: ${experience}
     `;
 
+    // };
+    const affiseUrl = 'https://emerald.affise.com/signup';
+    const affiseData = {
+      email: email, // Замените на ваше значение email
+      password: password,
+      repeat_password: confirmPassword,
+      agree: agreed,
+      agree_use_info: agreed
+
+    }
+
     // Отправляем данные в Telegram через API бота
-    axios
-      .get(
+     axios
+      .post(
         `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
           text,
         )}`,
@@ -223,6 +236,15 @@ const RegistrationForm: React.FC = () => {
       .catch((error) => {
         console.error("Ошибка при отправке сообщения в Telegram:", error);
       });
+
+    await axios.post(affiseUrl, affiseData)
+        .then(function (response) {
+      console.log(response);
+    })
+        .catch(function (error) {
+          console.log(error);
+        });
+
     setName("");
     setEmail("");
     setPassword("");
@@ -232,6 +254,7 @@ const RegistrationForm: React.FC = () => {
     setTrafficSource("");
     setExperience("");
   };
+
   const handleInputChange = (fieldName: string, value: string) => {
     setErrorMessages((prevErrors) => ({ ...prevErrors, [fieldName]: "" }));
     validateField(fieldName, value);

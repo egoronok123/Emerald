@@ -115,7 +115,7 @@ const Header = () => {
                         isOpen ? "sm:hidden" : "sm:hidden"
                     }`}
                 >
-                    <Link to={"logIn"} className={"mr-8"}>
+                    <Link to={"https://emerald.affise.com/v2/sign/in"} className={"mr-8"}>
                         <li
                             className={
                                 "my-2 cursor-pointer  flex  items-center hover-svg font-semibold"
