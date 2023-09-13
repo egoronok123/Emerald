@@ -113,7 +113,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
                         </li>
 
                     </Link>
-                    <Link to={"https://emerald.affise.com/v2/sign/in"} className="w-80 mx-auto mb-4" onClick={toggleMenu} target="_blank">
+                    <Link to={"https://emerald.affise.com/v2/sign/in"} className="w-80 mx-auto mb-4" onClick={toggleMenu} >
                         <li className=" cursor-pointer w-[13rem] flex justify-end  hover-svg font-semibold transition-colors duration-300">
                             <svg
                                 width="18"

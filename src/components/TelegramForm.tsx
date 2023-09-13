@@ -229,6 +229,8 @@ const RegistrationForm: React.FC = () => {
     //
     // }
 
+    // Convert the object to a JSON string
+
     // Отправляем данные в Telegram через API бота
      axios
       .post(
@@ -246,10 +248,10 @@ const RegistrationForm: React.FC = () => {
 
     axios.post(affiseUrl, form, {
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded', // Устанавливаем Content-Type для Form Data
+        'Content-Type': 'application/x-www-form-urlencoded', // Set Content-Type to JSON
+        'Accept': 'application/json, text/plain, */*',
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': '*',
-        'Access-Control-Allow-Credentials': 'true'
       }
     })
         .then(function (response) {
@@ -656,14 +658,14 @@ const RegistrationForm: React.FC = () => {
                   validateField("trafficSource", trafficSource);
                 }}
               >
-                <option value="">{t('registration.placeholderSelect')}</option>placeholderSelect
-                <option value="Гемблинг">Гемблинг</option>
-                <option value="Беттинг">Беттинг</option>
-                <option value="Адалт">Адалт</option>
-                <option value="Крипто">Крипто</option>
-                <option value="Финансы">Финансы</option>
-                <option value="Нутра">Нутра</option>
-                <option value="Товарка">Товарка</option>
+                <option value={`${t('registration.placeholderSelect')}`}>{t('registration.placeholderSelect')}</option>
+                <option value={`${t('registration.textSelect1')}`}>{t('registration.textSelect1')}</option>
+                <option value={`${t('registration.textSelect2')}`}>{t('registration.textSelect2')}</option>
+                <option value={`${t('registration.textSelect3')}`}>{t('registration.textSelect3')}</option>
+                <option value={`${t('registration.textSelect4')}`}>{t('registration.textSelect4')}</option>
+                <option value={`${t('registration.textSelect5')}`}>{t('registration.textSelect5')}</option>
+                <option value={`${t('registration.textSelect6')}`}>{t('registration.textSelect6')}</option>
+                <option value={`${t('registration.textSelect7')}`}>{t('registration.textSelect7')}</option>
               </select>
               {errorMessages.trafficSource && (
                 <p className="textError absolute text-sm">
