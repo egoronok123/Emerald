@@ -172,7 +172,7 @@ function WelcomeSect() {
                 ref={welcomeDivRef3}
             >
                 <Link
-                    to={"registration"}
+                    to={"https://emerald.affise.com/v2/sign/up"}
                     className={"flex justify-center py-4 px-1 "}
                 >
                     <p className={"ml-4"}>  {t('welcomeSect.buttonText')}</p>

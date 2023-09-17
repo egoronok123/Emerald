@@ -84,7 +84,7 @@ const OverlayHeader: React.FC<OverlayHeaderProps> = ({ isOpen, toggleMenu }) => 
 
                 {/* Добавьте второй <ul> сюда */}
                 <ul className="` text-white flex flex-col absolute bottom-0 ">
-                    <Link to={"/registration"} onClick={toggleMenu} className=" w-80 mx-auto">
+                    <Link to={"https://emerald.affise.com/v2/sign/up"} onClick={toggleMenu} className=" w-80 mx-auto">
                         <li>
                             <button
                                 className={

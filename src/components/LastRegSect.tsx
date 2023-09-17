@@ -69,7 +69,7 @@ function LastRegSect() {
                     }
                 >
                     <Link
-                        to={"registration"}
+                        to={"https://emerald.affise.com/v2/sign/up"}
                         className={"flex justify-center py-4"}
                     >
                         <p className={"ml-4"}>{t('welcomeSect.buttonText')}</p>

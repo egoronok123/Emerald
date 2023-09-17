@@ -213,12 +213,14 @@ const RegistrationForm: React.FC = () => {
     `;
     const form = new FormData();
     // };
-    const affiseUrl = 'https://emerald.affise.com/signup';
+    const affiseUrl = 'https://api-emerald.affise.com/3.0/admin/partner';
     form.append('email', `${email}`);
     form.append('password', `${password}`);
-    form.append('repeat_password', `${confirmPassword}`);
-    form.append('agree', `${agreed}`);
-    form.append('agree_use_info', `${agreed}`);
+    form.append('country', `BY`)
+    form.append('status', 'on moderation')
+    //form.append('repeat_password', `${confirmPassword}`);
+    //form.append('agree', `${agreed}`);
+    //form.append('agree_use_info', `${agreed}`);
 
     // const affiseData = {
     //   email: email, // Замените на ваше значение email
@@ -231,7 +233,6 @@ const RegistrationForm: React.FC = () => {
 
     // Convert the object to a JSON string
 
-    // Отправляем данные в Telegram через API бота
      axios
       .post(
         `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
@@ -248,10 +249,9 @@ const RegistrationForm: React.FC = () => {
 
     axios.post(affiseUrl, form, {
       headers: {
+        'API-key': 'dc4dd7788a0aefb1ec74e5724926e924',
         'Content-Type': 'application/x-www-form-urlencoded', // Set Content-Type to JSON
-        'Accept': 'application/json, text/plain, */*',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': '*',
+
       }
     })
         .then(function (response) {
