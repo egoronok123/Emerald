@@ -503,6 +503,12 @@ html {
     text-align: center;
 }
 
+.line-container4 {
+    position: absolute;
+    margin-top: 18rem;
+    overflow: hidden;
+    text-align: center;
+}
 .line-container-mobile {
     width: 100%;
     position: absolute;

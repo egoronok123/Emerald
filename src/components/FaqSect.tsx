@@ -78,7 +78,7 @@ function FaqSect() {
 
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="201" height="1662" viewBox="0 0 201 1662" fill="none"
-                     className={"absolute  mt-[17rem] left-[20rem]"}>
+                     className={"line-container4"}>
                     <path
                         d="M98.834 1C-61.6659 100.5 178.834 140 138.834 235C98.8339 330 13.3096 442.536 10.3353 546.498C6.87379 667.489 152.334 738.671 152.334 821.999C152.334 885.72 23.671 854.498 10.3353 985.499C-3.00044 1116.5 163.499 1111.5 168.993 1222C174.546 1333.69 -6.00711 1361.5 1.81753 1454.5C9.64218 1547.5 267.317 1563.5 182.817 1660.5"
                         stroke="#264777" strokeWidth="2" strokeLinecap="round" strokeDasharray="12 12"/>
