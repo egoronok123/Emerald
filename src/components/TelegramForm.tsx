@@ -211,27 +211,8 @@ const RegistrationForm: React.FC = () => {
     // Формируем текст сообщения для отправки в Telegram
     const text = `Telegram: @${telegramNickname}\nEmail: ${email}\nName: ${name}\nИсточник трафика: ${trafficSource}\nОпыт работы: ${experience}
     `;
-    const form = new FormData();
+
     // };
-    const affiseUrl = 'https://api-emerald.affise.com/3.0/admin/partner';
-    form.append('email', `${email}`);
-    form.append('password', `${password}`);
-    form.append('country', `BY`)
-    form.append('status', 'on moderation')
-    //form.append('repeat_password', `${confirmPassword}`);
-    //form.append('agree', `${agreed}`);
-    //form.append('agree_use_info', `${agreed}`);
-
-    // const affiseData = {
-    //   email: email, // Замените на ваше значение email
-    //   password: password,
-    //   repeat_password: confirmPassword,
-    //   agree: agreed,
-    //   agree_use_info: agreed
-    //
-    // }
-
-    // Convert the object to a JSON string
 
      axios
       .post(
@@ -246,16 +227,20 @@ const RegistrationForm: React.FC = () => {
         console.error("Ошибка при отправке сообщения в Telegram:", error);
       });
 
-
+    const form = new FormData();
+    form.append('email', `${email}`);
+    form.append('password', `${password}`);
+    form.append('country', `BY`);
+    form.append('status', `on moderation`);
+    const affiseUrl = 'http://emerald.affise.com/3.0/admin/partner';
     axios.post(affiseUrl, form, {
       headers: {
         'API-key': 'dc4dd7788a0aefb1ec74e5724926e924',
         'Content-Type': 'application/x-www-form-urlencoded', // Set Content-Type to JSON
-
       }
     })
         .then(function (response) {
-      console.log(response);
+      console.log(response.data);
     })
         .catch(function (error) {
           console.log(error);
